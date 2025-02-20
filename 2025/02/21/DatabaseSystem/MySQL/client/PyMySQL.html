@@ -1,0 +1,31 @@
+<hr>
+<h2 id="title-PyMySQLdate-2024-05-27-22-50-23tags"><a href="#title-PyMySQLdate-2024-05-27-22-50-23tags" class="headerlink" title="title: PyMySQLdate: 2024-05-27 22:50:23tags:"></a>title: PyMySQL<br>date: 2024-05-27 22:50:23<br>tags:</h2><p><a href="https://pymysql.readthedocs.io/en/latest/index.html">https://pymysql.readthedocs.io/en/latest/index.html</a></p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>pip</p>
+<pre><code>python pip install PyMySQL
+</code></pre>
+<h2 id="Connection"><a href="#Connection" class="headerlink" title="Connection"></a>Connection</h2><p><a href="https://pymysql.readthedocs.io/en/latest/modules/connections.html">https://pymysql.readthedocs.io/en/latest/modules/connections.html</a></p>
+<h2 id="Cursor"><a href="#Cursor" class="headerlink" title="Cursor"></a>Cursor</h2><p>与数据库中的游标名称一样，数据获取形式有相似之处，但这两个本质是完全不同的东西</p>
+<p><a href="https://pymysql.readthedocs.io/en/latest/modules/cursors.html">https://pymysql.readthedocs.io/en/latest/modules/cursors.html</a></p>
+<pre><code class="mysql">import pymysql
+
+# 打开数据库连接
+db = pymysql.connect(host=&#39;192.168.4.254&#39;,
+                     user=&#39;paipai&#39;,
+                     password=&#39;VpGM2PCh6Td.v&#39;,
+                     database=&#39;rz_gs_v2&#39;)
+
+# 使用 cursor() 方法创建一个游标对象 cursor
+cursor = db.cursor()
+
+# 使用 execute()  方法执行 SQL 查询
+cursor.execute(&quot;SELECT VERSION()&quot;)
+
+# 使用 fetchone() 方法获取单条数据.
+data = cursor.fetchone()
+
+print(&quot;Database version : %s &quot; % data)
+
+# 关闭数据库连接
+db.close()
+</code></pre>
+<p><a href="https://blog.csdn.net/freeking101/article/details/51595235">https://blog.csdn.net/freeking101/article/details/51595235</a></p>

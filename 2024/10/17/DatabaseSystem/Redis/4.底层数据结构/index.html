@@ -1,0 +1,5056 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	
+	<!-- title -->
+	
+	<title>
+	
+		底层数据结构 | 
+	 
+	予早 Tech
+	</title>
+	
+	<!-- keywords,description -->
+	
+	
+
+	<!-- favicon -->
+	
+
+
+	<!-- search -->
+	<script>
+		var searchEngine = "";
+		if(typeof searchEngine == "undefined" || searchEngine == null || searchEngine == ""){
+			searchEngine = "https://www.google.com/search?q=";
+		}
+		var homeHost = "";
+		if(typeof homeHost == "undefined" || homeHost == null || homeHost == ""){
+			homeHost = window.location.host;
+		}
+	</script>
+
+
+	
+<link rel="stylesheet" href="/css/main.css">
+
+	
+<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/darcula.min.css">
+
+	
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+
+
+	
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+
+	
+<script src="/js/main.js"></script>
+
+
+	
+	
+
+<meta name="generator" content="Hexo 7.2.0"></head>
+
+<body>
+	<header id="header">
+    <a id="title" href="/" class="logo">予早 Tech</a>
+
+	<ul id="menu">
+    
+      <li class="menu-item">
+        <a href="/yuzaoyah/about" class="menu-item-link">About</a>
+      </li>
+    
+
+    
+
+    
+
+    
+  
+    
+	</ul>
+</header>
+
+	
+<div id="sidebar">
+	<button id="sidebar-toggle" class="toggle" ><i class="fa fa-arrow-right " aria-hidden="true"></i></button>
+	
+	<div id="site-toc">
+		<input id="search-input" class="search-input" type="search" placeholder="Press Enter to search">
+		<div id="tree">
+			
+
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										BusinessSystem
+									</a>
+									
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										电商系统
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/BusinessSystem/%E7%94%B5%E5%95%86%E7%B3%BB%E7%BB%9F/Untitled/">
+                     
+										    Untitled
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										统一消息推送
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/BusinessSystem/%E7%BB%9F%E4%B8%80%E6%B6%88%E6%81%AF%E6%8E%A8%E9%80%81/%E7%9F%AD%E4%BF%A1%E6%B6%88%E6%81%AF%E6%A8%A1%E6%9D%BF/">
+                     
+										    短信消息模板
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										CloudPlatform
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/CloudPlatform/OSS/">
+                     
+										    OSS
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										ComputerBasic
+									</a>
+									
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										操作系统
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/ComputerBasic/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/KB%E3%80%81KiB/">
+                     
+										    KB、KiB
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/ComputerBasic/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/README/">
+                     
+										    README
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										UNIX-likeOS
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/ComputerBasic/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/UNIX-likeOS/UID%E3%80%81EUID/">
+                     
+										    UID、EUID
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/ComputerBasic/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/UNIX-likeOS/export/">
+                     
+										    export
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/ComputerBasic/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/UNIX-likeOS/linux%E6%97%B6%E9%97%B4%E5%90%8C%E6%AD%A5/">
+                     
+										    linux时间同步
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/ComputerBasic/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/UNIX-likeOS/make%E3%80%81cmake/">
+                     
+										    make、cmake
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/ComputerBasic/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/UNIX-likeOS/ps/">
+                     
+										    ps
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/ComputerBasic/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/UNIX-likeOS/sed/">
+                     
+										    sed
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/ComputerBasic/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/UNIX-likeOS/shell/">
+                     
+										    shell
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/ComputerBasic/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/UNIX-likeOS/%E7%A3%81%E7%9B%98%E6%89%A9%E5%AE%B9/">
+                     
+										    磁盘扩容
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/ComputerBasic/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/UNIX-likeOS/%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E9%87%8D%E5%AE%9A%E5%90%91/">
+                     
+										    输入输出重定向
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										WindowsOS
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/ComputerBasic/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/WindowsOS/PowerShell%20/">
+                     
+										    PowerShell 
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/ComputerBasic/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/WindowsOS/Windows%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F/">
+                     
+										    Windows环境变量
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/ComputerBasic/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/WindowsOS/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/">
+                     
+										    实用工具
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/ComputerBasic/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/x86%E3%80%81x64/">
+                     
+										    x86、x64
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/12/21/ComputerBasic/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E6%A8%A1%E5%9E%8B/">
+                     
+										    多线程模型
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										数据结构与算法
+									</a>
+									
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										1.基础知识
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/ComputerBasic/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/">
+                     
+										    基本概念
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/ComputerBasic/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/1.%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/%E7%AE%97%E6%B3%95%E8%A6%81%E7%82%B9/">
+                     
+										    算法要点
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/ComputerBasic/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/Untitled/">
+                     
+										    Untitled
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/ComputerBasic/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E4%BA%8C%E5%8F%89%E6%A0%91/">
+                     
+										    二叉树
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/ComputerBasic/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%9B%BE/">
+                     
+										    图
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										基础数学知识
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/ComputerBasic/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%9F%BA%E7%A1%80%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/%E5%9B%9B%E6%96%B9%E5%AE%9A%E7%90%86/">
+                     
+										    四方定理
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/ComputerBasic/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%9F%BA%E7%A1%80%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/%E6%9C%80%E5%A4%A7%E5%85%AC%E7%BA%A6%E6%95%B0%E3%80%81%E6%9C%80%E5%B0%8F%E5%85%AC%E5%80%8D%E6%95%B0/">
+                     
+										    最大公约数、最小公倍数
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/ComputerBasic/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%9F%BA%E7%A1%80%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/%E6%B1%89%E6%98%8E%E8%B7%9D%E7%A6%BB%E3%80%81%E6%B1%89%E6%98%8E%E9%87%8D%E9%87%8F/">
+                     
+										    汉明距离、汉明重量
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/ComputerBasic/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%9F%BA%E7%A1%80%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/%E7%B4%A0%E6%95%B0/">
+                     
+										    素数
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/ComputerBasic/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E5%9F%BA%E7%A1%80%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86/%E9%97%B0%E5%B9%B4/">
+                     
+										    闰年
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/ComputerBasic/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E6%8E%92%E5%BA%8F/">
+                     
+										    排序
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/ComputerBasic/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E6%9C%80%E5%A4%A7%E5%85%AC%E7%BA%A6%E6%95%B0%E3%80%81%E6%9C%80%E5%B0%8F%E5%85%AC%E5%80%8D%E6%95%B0/">
+                     
+										    最大公约数、最小公倍数
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/ComputerBasic/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E6%A0%91%E5%92%8C%E6%A3%AE%E6%9E%97/">
+                     
+										    树和森林
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/ComputerBasic/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E8%9B%AE%E5%8A%9B%E6%B3%95/">
+                     
+										    蛮力法
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/ComputerBasic/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/%E9%98%9F%E5%88%97/">
+                     
+										    队列
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										计算机网络
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/ComputerBasic/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/README/">
+                     
+										    README
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/ComputerBasic/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E9%82%AE%E4%BB%B6/">
+                     
+										    邮件
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										ComputerLanguage
+									</a>
+									
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										Go
+									</a>
+									
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										1.语言基础
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2024/12/09/ComputerLanguage/Go/1.%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/1.%E6%A6%82%E8%BF%B0/">
+                     
+										    1.概述
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/12/11/ComputerLanguage/Go/1.%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/10.%E5%87%BD%E6%95%B0/">
+                     
+										    10.函数
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/ComputerLanguage/Go/1.%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/11.%E5%BC%82%E5%B8%B8/">
+                     
+										    11.异常
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/ComputerLanguage/Go/1.%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/12.%E5%85%83%E7%BC%96%E7%A8%8B/">
+                     
+										    12.元编程
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/12/19/ComputerLanguage/Go/1.%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/13.%E6%BA%90%E6%96%87%E4%BB%B6%E9%97%B4%E7%BB%93%E6%9E%84%E7%BB%84%E7%BB%87/">
+                     
+										    13.源文件间结构组织
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/12/19/ComputerLanguage/Go/1.%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/14.%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B/">
+                     
+										    14.面向对象编程
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/12/09/ComputerLanguage/Go/1.%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/2.%E5%8E%86%E5%8F%B2/">
+                     
+										    2.历史
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/ComputerLanguage/Go/1.%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/3.1%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C%E6%A8%A1%E5%BC%8F/">
+                     
+										    3.1代码执行模式
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/12/09/ComputerLanguage/Go/1.%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/3.%E7%8E%AF%E5%A2%83/">
+                     
+										    3.环境
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/12/09/ComputerLanguage/Go/1.%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/4.%E6%A0%87%E8%AF%86%E7%AC%A6/">
+                     
+										    4.标识符
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/12/11/ComputerLanguage/Go/1.%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/5.%E5%B8%B8%E9%87%8F%E4%B8%8E%E5%8F%98%E9%87%8F/">
+                     
+										    5.常量与变量
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/12/09/ComputerLanguage/Go/1.%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/6.%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/">
+                     
+										    6.数据类型
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/12/11/ComputerLanguage/Go/1.%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/7.%E8%BF%90%E7%AE%97%E7%AC%A6/">
+                     
+										    7.运算符
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/12/11/ComputerLanguage/Go/1.%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/8.%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/">
+                     
+										    8.流程控制
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/12/11/ComputerLanguage/Go/1.%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/9.%E6%B3%A8%E9%87%8A/">
+                     
+										    9.注释
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										2.功能基础
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2024/12/20/ComputerLanguage/Go/2.%E5%8A%9F%E8%83%BD%E5%9F%BA%E7%A1%80/1.%E7%BC%96%E8%A7%A3%E7%A0%81/">
+                     
+										    1.编解码
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/12/21/ComputerLanguage/Go/2.%E5%8A%9F%E8%83%BD%E5%9F%BA%E7%A1%80/10.%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/">
+                     
+										    10.并发编程
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/ComputerLanguage/Go/2.%E5%8A%9F%E8%83%BD%E5%9F%BA%E7%A1%80/11.%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/">
+                     
+										    11.网络编程
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/12/20/ComputerLanguage/Go/2.%E5%8A%9F%E8%83%BD%E5%9F%BA%E7%A1%80/2.%E5%8A%A0%E8%A7%A3%E5%AF%86/">
+                     
+										    2.加解密
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/ComputerLanguage/Go/2.%E5%8A%9F%E8%83%BD%E5%9F%BA%E7%A1%80/3.IO/">
+                     
+										    3.IO
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/12/20/ComputerLanguage/Go/2.%E5%8A%9F%E8%83%BD%E5%9F%BA%E7%A1%80/4.%E6%95%B0%E5%AD%A6/">
+                     
+										    4.数学
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/ComputerLanguage/Go/2.%E5%8A%9F%E8%83%BD%E5%9F%BA%E7%A1%80/5.%E6%97%B6%E9%97%B4/">
+                     
+										    5.时间
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/ComputerLanguage/Go/2.%E5%8A%9F%E8%83%BD%E5%9F%BA%E7%A1%80/6.%E7%B3%BB%E7%BB%9F/">
+                     
+										    6.系统
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/12/21/ComputerLanguage/Go/2.%E5%8A%9F%E8%83%BD%E5%9F%BA%E7%A1%80/7.%E5%9F%BA%E7%A1%80%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/">
+                     
+										    7.基础数据结构与算法
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/12/20/ComputerLanguage/Go/2.%E5%8A%9F%E8%83%BD%E5%9F%BA%E7%A1%80/9.%E7%BB%9F%E4%B8%80%E6%97%A5%E5%BF%97/">
+                     
+										    9.统一日志
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										3.运行时
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/ComputerLanguage/Go/3.%E8%BF%90%E8%A1%8C%E6%97%B6/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/">
+                     
+										    内存管理
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										4.主要规范
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/ComputerLanguage/Go/4.%E4%B8%BB%E8%A6%81%E8%A7%84%E8%8C%83/Untitled/">
+                     
+										    Untitled
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/ComputerLanguage/Go/README/">
+                     
+										    README
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										Java
+									</a>
+									
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										2.功能基础
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/ComputerLanguage/Java/2.%E5%8A%9F%E8%83%BD%E5%9F%BA%E7%A1%80/10.%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/">
+                     
+										    10.并发编程
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										Python
+									</a>
+									
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										1.语言基础
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2024/06/26/ComputerLanguage/Python/1.%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/1.%E6%A6%82%E8%BF%B0/">
+                     
+										    1.概述
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/05/27/ComputerLanguage/Python/1.%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/10.%E6%B3%A8%E9%87%8A/">
+                     
+										    10.注释
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/10/05/ComputerLanguage/Python/1.%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/11.1.%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0/">
+                     
+										    11.1.内置函数
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/10/05/ComputerLanguage/Python/1.%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/11.%E5%87%BD%E6%95%B0/">
+                     
+										    11.函数
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/10/05/ComputerLanguage/Python/1.%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/12.%E5%BC%82%E5%B8%B8/">
+                     
+										    12.异常
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/10/05/ComputerLanguage/Python/1.%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/13.%E5%85%83%E7%BC%96%E7%A8%8B/">
+                     
+										    13.元编程
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/10/05/ComputerLanguage/Python/1.%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/14.%E6%BA%90%E6%96%87%E4%BB%B6%E9%97%B4%E7%BB%93%E6%9E%84%E7%BB%84%E7%BB%87/">
+                     
+										    14.源文件间结构组织
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/10/05/ComputerLanguage/Python/1.%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/15.1.%E5%86%85%E7%BD%AE%E7%B1%BB/">
+                     
+										    15.1.内置类
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/10/05/ComputerLanguage/Python/1.%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/15.%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B/">
+                     
+										    15.面向对象编程
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/10/05/ComputerLanguage/Python/1.%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/16.%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B/">
+                     
+										    16.函数式编程
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/10/05/ComputerLanguage/Python/1.%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/17.%E6%B5%81%E5%BC%8F%E7%BC%96%E7%A8%8B/">
+                     
+										    17.流式编程
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/10/05/ComputerLanguage/Python/1.%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/18.%E9%9D%A2%E5%90%91%E5%88%87%E9%9D%A2%E7%BC%96%E7%A8%8B/">
+                     
+										    18.面向切面编程
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/06/26/ComputerLanguage/Python/1.%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/2.%E5%8E%86%E5%8F%B2/">
+                     
+										    2.历史
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/10/05/ComputerLanguage/Python/1.%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/3.1.%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C%E6%A8%A1%E5%BC%8F/">
+                     
+										    3.1.代码执行模式
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/10/05/ComputerLanguage/Python/1.%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/3.2.__main__/">
+                     
+										    3.2.__main__
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/10/05/ComputerLanguage/Python/1.%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/3.%E7%8E%AF%E5%A2%83/">
+                     
+										    3.环境
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/06/26/ComputerLanguage/Python/1.%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/4.%E5%85%B3%E9%94%AE%E5%AD%97%E5%92%8C%E6%A0%87%E8%AF%86%E7%AC%A6/">
+                     
+										    4.关键字和标识符
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/10/05/ComputerLanguage/Python/1.%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/5.%E5%B8%B8%E9%87%8F%E4%B8%8E%E5%8F%98%E9%87%8F/">
+                     
+										    5.常量与变量
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/10/05/ComputerLanguage/Python/1.%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/6.%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/">
+                     
+										    6.数据类型
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/10/05/ComputerLanguage/Python/1.%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/7.%E8%BF%90%E7%AE%97%E7%AC%A6/">
+                     
+										    7.运算符
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/06/27/ComputerLanguage/Python/1.%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/8.%E8%A1%A8%E8%BE%BE%E5%BC%8F/">
+                     
+										    8.表达式
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/06/26/ComputerLanguage/Python/1.%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/9.%E6%B5%81%E7%A8%8B%E6%8E%A7%E5%88%B6/">
+                     
+										    9.流程控制
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/ComputerLanguage/Python/1.%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80/%E4%B8%8A%E4%B8%8B%E6%96%87/">
+                     
+										    上下文
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										2.功能基础
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/ComputerLanguage/Python/2.%E5%8A%9F%E8%83%BD%E5%9F%BA%E7%A1%80/1.%E7%BC%96%E8%A7%A3%E7%A0%81/">
+                     
+										    1.编解码
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/10/05/ComputerLanguage/Python/2.%E5%8A%9F%E8%83%BD%E5%9F%BA%E7%A1%80/10.%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B/">
+                     
+										    10.并发编程
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/10/05/ComputerLanguage/Python/2.%E5%8A%9F%E8%83%BD%E5%9F%BA%E7%A1%80/11.%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/">
+                     
+										    11.单元测试
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/10/05/ComputerLanguage/Python/2.%E5%8A%9F%E8%83%BD%E5%9F%BA%E7%A1%80/12.Debug/">
+                     
+										    12.Debug
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/10/05/ComputerLanguage/Python/2.%E5%8A%9F%E8%83%BD%E5%9F%BA%E7%A1%80/13.%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B/">
+                     
+										    13.网络编程
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/10/05/ComputerLanguage/Python/2.%E5%8A%9F%E8%83%BD%E5%9F%BA%E7%A1%80/14.%E5%9B%BD%E9%99%85%E5%8C%96%E5%92%8C%E6%9C%AC%E5%9C%B0%E5%8C%96/">
+                     
+										    14.国际化和本地化
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/11/30/ComputerLanguage/Python/2.%E5%8A%9F%E8%83%BD%E5%9F%BA%E7%A1%80/15.%E6%96%87%E6%A1%A3%E5%8C%96/">
+                     
+										    15.文档化
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/11/30/ComputerLanguage/Python/2.%E5%8A%9F%E8%83%BD%E5%9F%BA%E7%A1%80/16.%E8%B7%A8%E8%AF%AD%E8%A8%80%E8%B0%83%E7%94%A8/">
+                     
+										    16.跨语言调用
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/ComputerLanguage/Python/2.%E5%8A%9F%E8%83%BD%E5%9F%BA%E7%A1%80/2.%E5%8A%A0%E8%A7%A3%E5%AF%86/">
+                     
+										    2.加解密
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/10/05/ComputerLanguage/Python/2.%E5%8A%9F%E8%83%BD%E5%9F%BA%E7%A1%80/3.IO/">
+                     
+										    3.IO
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/10/05/ComputerLanguage/Python/2.%E5%8A%9F%E8%83%BD%E5%9F%BA%E7%A1%80/4.%E6%95%B0%E5%AD%A6/">
+                     
+										    4.数学
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/10/05/ComputerLanguage/Python/2.%E5%8A%9F%E8%83%BD%E5%9F%BA%E7%A1%80/5.%E6%97%B6%E9%97%B4/">
+                     
+										    5.时间
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/10/05/ComputerLanguage/Python/2.%E5%8A%9F%E8%83%BD%E5%9F%BA%E7%A1%80/6.%E7%B3%BB%E7%BB%9F/">
+                     
+										    6.系统
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/10/05/ComputerLanguage/Python/2.%E5%8A%9F%E8%83%BD%E5%9F%BA%E7%A1%80/7.%E5%9F%BA%E7%A1%80%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/">
+                     
+										    7.基础数据结构与算法
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/10/05/ComputerLanguage/Python/2.%E5%8A%9F%E8%83%BD%E5%9F%BA%E7%A1%80/8.%E5%9B%BE%E5%BD%A2%E7%94%A8%E6%88%B7%E7%95%8C%E9%9D%A2/">
+                     
+										    8.图形用户界面
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/10/05/ComputerLanguage/Python/2.%E5%8A%9F%E8%83%BD%E5%9F%BA%E7%A1%80/9.%E7%BB%9F%E4%B8%80%E6%97%A5%E5%BF%97/">
+                     
+										    9.统一日志
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										3.解释器
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2025/01/08/ComputerLanguage/Python/3.%E8%A7%A3%E9%87%8A%E5%99%A8/%E5%A6%82%E4%BD%95%E5%88%9D%E6%AD%A5%E4%BA%86%E8%A7%A3%E8%A7%A3%E9%87%8A%E5%99%A8%E5%8E%9F%E7%90%86/">
+                     
+										    如何初步了解解释器原理
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/ComputerLanguage/Python/3.%E8%A7%A3%E9%87%8A%E5%99%A8/%E8%A7%81CPython3.7%E6%BA%90%E7%A0%81%E5%89%96%E6%9E%90/">
+                     
+										    见CPython3.7源码剖析
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										4.三方组件
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/ComputerLanguage/Python/4.%E4%B8%89%E6%96%B9%E7%BB%84%E4%BB%B6/0.%E5%B8%B8%E7%94%A8%E5%8A%9F%E8%83%BD%E5%BA%93%E4%B8%80%E8%A7%88/">
+                     
+										    0.常用功能库一览
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/ComputerLanguage/Python/4.%E4%B8%89%E6%96%B9%E7%BB%84%E4%BB%B6/1.%E5%88%86%E8%AF%8D%E3%80%81%E8%AF%8D%E4%BA%91/">
+                     
+										    1.分词、词云
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/ComputerLanguage/Python/4.%E4%B8%89%E6%96%B9%E7%BB%84%E4%BB%B6/2.matplotlib/">
+                     
+										    2.matplotlib
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/ComputerLanguage/Python/4.%E4%B8%89%E6%96%B9%E7%BB%84%E4%BB%B6/3.pycurl/">
+                     
+										    3.pycurl
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/ComputerLanguage/Python/4.%E4%B8%89%E6%96%B9%E7%BB%84%E4%BB%B6/4.celery/">
+                     
+										    4.celery
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/ComputerLanguage/Python/4.%E4%B8%89%E6%96%B9%E7%BB%84%E4%BB%B6/5.pandas/">
+                     
+										    5.pandas
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/ComputerLanguage/Python/4.%E4%B8%89%E6%96%B9%E7%BB%84%E4%BB%B6/6.%E6%96%87%E6%A1%A3/">
+                     
+										    6.文档
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/ComputerLanguage/Python/4.%E4%B8%89%E6%96%B9%E7%BB%84%E4%BB%B6/7.pyan/">
+                     
+										    7.pyan
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/ComputerLanguage/Python/4.%E4%B8%89%E6%96%B9%E7%BB%84%E4%BB%B6/8.tqdm/">
+                     
+										    8.tqdm
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/ComputerLanguage/Python/4.%E4%B8%89%E6%96%B9%E7%BB%84%E4%BB%B6/README/">
+                     
+										    README
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										4.主要规范
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/ComputerLanguage/Python/4.%E4%B8%BB%E8%A6%81%E8%A7%84%E8%8C%83/1.%E6%A6%82%E8%BF%B0/">
+                     
+										    1.概述
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/11/30/ComputerLanguage/Python/README/">
+                     
+										    README
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/ComputerLanguage/README/">
+                     
+										    README
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										编程语言理论
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/ComputerLanguage/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E7%90%86%E8%AE%BA/%E5%8D%AB%E8%AF%AD%E5%8F%A5/">
+                     
+										    卫语句
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/ComputerLanguage/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E7%90%86%E8%AE%BA/%E8%AF%AD%E5%8F%A5/">
+                     
+										    语句
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/12/22/ComputerLanguage/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E7%90%86%E8%AE%BA/%E8%AF%AD%E8%A8%80%E7%B1%BB%E5%9E%8B/">
+                     
+										    语言类型
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/ComputerLanguage/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%AF%AD%E8%A8%80%E4%B8%AD%E7%9A%84%E9%97%AD%E5%8C%85/">
+                     
+										    计算机语言中的闭包
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										CyberSecurity
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/CyberSecurity/Untitled/">
+                     
+										    Untitled
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/CyberSecurity/%E8%AF%81%E4%B9%A6/">
+                     
+										    证书
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										DatabaseSystem
+									</a>
+									
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										ElasticStack
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/DatabaseSystem/ElasticStack/Elasticsearch/">
+                     
+										    Elasticsearch
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/DatabaseSystem/ElasticStack/KQL/">
+                     
+										    KQL
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										MongoDB
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/DatabaseSystem/MongoDB/%E5%91%BD%E4%BB%A4/">
+                     
+										    命令
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										MySQL
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/DatabaseSystem/MySQL/1.%E7%AE%80%E4%BB%8B/">
+                     
+										    1.简介
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/DatabaseSystem/MySQL/10.%E9%9B%86%E7%BE%A4/">
+                     
+										    10.集群
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/DatabaseSystem/MySQL/11.%E8%B0%83%E4%BC%98/">
+                     
+										    11.调优
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/DatabaseSystem/MySQL/12.%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/">
+                     
+										    12.故障排除
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/DatabaseSystem/MySQL/13.%E5%88%86%E5%8C%BA/">
+                     
+										    13.分区
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/DatabaseSystem/MySQL/2.%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/">
+                     
+										    2.安装配置
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/DatabaseSystem/MySQL/3.%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/">
+                     
+										    3.数据类型
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/DatabaseSystem/MySQL/4.%E5%87%BD%E6%95%B0/">
+                     
+										    4.函数
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/DatabaseSystem/MySQL/4.%E6%B3%A8%E9%87%8A/">
+                     
+										    4.注释
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/DatabaseSystem/MySQL/5.1SQL/">
+                     
+										    5.1SQL
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/DatabaseSystem/MySQL/5.SQL/">
+                     
+										    5.SQL
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/DatabaseSystem/MySQL/5.%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1/">
+                     
+										    5.数据库设计
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/DatabaseSystem/MySQL/6.1%E7%B4%A2%E5%BC%95%E5%A4%B1%E6%95%88/">
+                     
+										    6.1索引失效
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/DatabaseSystem/MySQL/6.%E7%B4%A2%E5%BC%95/">
+                     
+										    6.索引
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/DatabaseSystem/MySQL/7.%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AE%89%E5%85%A8%E4%BF%9D%E6%8A%A4/">
+                     
+										    7.数据库安全保护
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/DatabaseSystem/MySQL/8.%E6%97%A5%E5%BF%97/">
+                     
+										    8.日志
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/DatabaseSystem/MySQL/9.%E5%91%BD%E4%BB%A4/">
+                     
+										    9.命令
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/DatabaseSystem/MySQL/DCL/">
+                     
+										    DCL
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/DatabaseSystem/MySQL/InnoDB/">
+                     
+										    InnoDB
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										client
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2024/05/27/DatabaseSystem/MySQL/client/Flask-SQLAlchemy/">
+                     
+										    Flask-SQLAlchemy
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/05/27/DatabaseSystem/MySQL/client/PyMySQL/">
+                     
+										    PyMySQL
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/05/26/DatabaseSystem/MySQL/client/SQLAlchemy/">
+                     
+										    SQLAlchemy
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/DatabaseSystem/MySQL/client/TortoiseORM/">
+                     
+										    TortoiseORM
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/DatabaseSystem/MySQL/explain/">
+                     
+										    explain
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/10/21/DatabaseSystem/MySQL/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AD%98%E5%82%A8%E5%BC%95%E6%93%8E/">
+                     
+										    数据库存储引擎
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/DatabaseSystem/MySQL/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%B9%B6%E5%8F%91%E9%97%AE%E9%A2%98%E5%88%86%E6%9E%90/">
+                     
+										    数据库并发问题分析
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/DatabaseSystem/MySQL/%E6%9E%B6%E6%9E%84/">
+                     
+										    架构
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										RabbitMQ
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/DatabaseSystem/RabbitMQ/0.Erlang%E3%80%81OTP/">
+                     
+										    0.Erlang、OTP
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/DatabaseSystem/RabbitMQ/1.%E5%9F%BA%E7%A1%80/">
+                     
+										    1.基础
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/DatabaseSystem/RabbitMQ/10.Configuration/">
+                     
+										    10.Configuration
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/DatabaseSystem/RabbitMQ/11.%E9%83%A8%E7%BD%B2%E6%8C%87%E5%8D%97/">
+                     
+										    11.部署指南
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/DatabaseSystem/RabbitMQ/12.%E9%9B%86%E7%BE%A4/">
+                     
+										    12.集群
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/DatabaseSystem/RabbitMQ/13.Manage/">
+                     
+										    13.Manage
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/DatabaseSystem/RabbitMQ/14.%E5%AE%A2%E6%88%B7%E7%AB%AF/">
+                     
+										    14.客户端
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/DatabaseSystem/RabbitMQ/15.Subject/">
+                     
+										    15.Subject
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/DatabaseSystem/RabbitMQ/16.TroubleShooting/">
+                     
+										    16.TroubleShooting
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/DatabaseSystem/RabbitMQ/17.Monitor/">
+                     
+										    17.Monitor
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/DatabaseSystem/RabbitMQ/18.Cluster/">
+                     
+										    18.Cluster
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/DatabaseSystem/RabbitMQ/19.%E5%BA%94%E7%94%A8%E5%9C%BA%E6%99%AF/">
+                     
+										    19.应用场景
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/DatabaseSystem/RabbitMQ/2.VirtualHost/">
+                     
+										    2.VirtualHost
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/DatabaseSystem/RabbitMQ/20.%E6%8F%92%E4%BB%B6/">
+                     
+										    20.插件
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/DatabaseSystem/RabbitMQ/21.TLS%E6%94%AF%E6%8C%81/">
+                     
+										    21.TLS支持
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/DatabaseSystem/RabbitMQ/22.%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/">
+                     
+										    22.性能测试
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/DatabaseSystem/RabbitMQ/23.RabbitMQ%20rabbitmq.conf%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%AF%A6%E8%A7%A3/">
+                     
+										    23.RabbitMQ rabbitmq.conf配置文件详解
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/DatabaseSystem/RabbitMQ/3.User/">
+                     
+										    3.User
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/DatabaseSystem/RabbitMQ/4.Message/">
+                     
+										    4.Message
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/DatabaseSystem/RabbitMQ/5.Exchange/">
+                     
+										    5.Exchange
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/DatabaseSystem/RabbitMQ/6.1.Classic%20Queue/">
+                     
+										    6.1.Classic Queue
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/DatabaseSystem/RabbitMQ/6.2.Quorum%20Queue/">
+                     
+										    6.2.Quorum Queue
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/DatabaseSystem/RabbitMQ/6.3.Stream%20Queue/">
+                     
+										    6.3.Stream Queue
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/DatabaseSystem/RabbitMQ/6.Queue/">
+                     
+										    6.Queue
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/DatabaseSystem/RabbitMQ/7.1.Channel/">
+                     
+										    7.1.Channel
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/DatabaseSystem/RabbitMQ/7.Connection/">
+                     
+										    7.Connection
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/DatabaseSystem/RabbitMQ/8.Producer/">
+                     
+										    8.Producer
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/DatabaseSystem/RabbitMQ/9.Consumer/">
+                     
+										    9.Consumer
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										Redis
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2024/07/01/DatabaseSystem/Redis/1.%E7%AE%80%E4%BB%8B/">
+                     
+										    1.简介
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/10/19/DatabaseSystem/Redis/10.%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5/">
+                     
+										    10.最佳实践
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/DatabaseSystem/Redis/11.Lua%E8%84%9A%E6%9C%AC/">
+                     
+										    11.Lua脚本
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										11.client
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/DatabaseSystem/Redis/11.client/Jedis/">
+                     
+										    Jedis
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/DatabaseSystem/Redis/11.client/Lettuce/">
+                     
+										    Lettuce
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/DatabaseSystem/Redis/11.client/python-redis-lock/">
+                     
+										    python-redis-lock
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/DatabaseSystem/Redis/11.client/redispy/">
+                     
+										    redispy
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										12.业务实战
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2024/11/29/DatabaseSystem/Redis/12.%E4%B8%9A%E5%8A%A1%E5%AE%9E%E6%88%98/1.OpenResty/">
+                     
+										    1.OpenResty
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/DatabaseSystem/Redis/12.%E4%B8%9A%E5%8A%A1%E5%AE%9E%E6%88%98/2.%E5%A4%9A%E7%BA%A7%E7%BC%93%E5%AD%98%E6%96%B9%E6%A1%88/">
+                     
+										    2.多级缓存方案
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/DatabaseSystem/Redis/12.%E4%B8%9A%E5%8A%A1%E5%AE%9E%E6%88%98/3.%E5%85%B6%E4%BB%96/">
+                     
+										    3.其他
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/07/01/DatabaseSystem/Redis/2.%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/">
+                     
+										    2.安装配置
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/07/02/DatabaseSystem/Redis/3.%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/">
+                     
+										    3.数据类型
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file active">
+									<a href="/2024/10/17/DatabaseSystem/Redis/4.%E5%BA%95%E5%B1%82%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">
+                     
+										    4.底层数据结构
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/10/18/DatabaseSystem/Redis/5.%E5%91%BD%E4%BB%A4/">
+                     
+										    5.命令
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/10/19/DatabaseSystem/Redis/6.%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/">
+                     
+										    6.内存管理
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/10/19/DatabaseSystem/Redis/7.%E9%9B%86%E7%BE%A4/">
+                     
+										    7.集群
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/10/17/DatabaseSystem/Redis/8.%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B/">
+                     
+										    8.网络模型
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/10/19/DatabaseSystem/Redis/8.%E9%83%A8%E7%BD%B2/">
+                     
+										    8.部署
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/10/17/DatabaseSystem/Redis/9.%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE/">
+                     
+										    9.通信协议
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										Tool
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/DatabaseSystem/Tool/DBeaver/">
+                     
+										    DBeaver
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/DatabaseSystem/Untitled/">
+                     
+										    Untitled
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										Data
+									</a>
+									
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										文件格式
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/Data/%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F/BSON/">
+                     
+										    BSON
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/Data/%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F/JSON/">
+                     
+										    JSON
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/Data/%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F/Markdown/">
+                     
+										    Markdown
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/Data/%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F/XML/">
+                     
+										    XML
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/Data/%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F/YAML/">
+                     
+										    YAML
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/Data/%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F/ini/">
+                     
+										    ini
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/Data/%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F/properties/">
+                     
+										    properties
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										Design
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/Design/%E5%93%88%E5%B8%8C%E4%B8%80%E8%87%B4%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/">
+                     
+										    哈希一致解决方案
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/Design/%E6%9E%B6%E6%9E%84%E6%BC%94%E5%8F%98/">
+                     
+										    架构演变
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/Design/%E7%BC%93%E5%AD%98%E7%BB%BC%E5%90%88%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/">
+                     
+										    缓存综合解决方案
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										Mantaince
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/Mantaince/Untitled/">
+                     
+										    Untitled
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/05/27/README/">
+                     
+										    README
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										SystemDesign
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/SystemDesign/%E7%9F%AD%E9%93%BE%E7%B3%BB%E7%BB%9F/">
+                     
+										    短链系统
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										Test
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/Test/%E6%A6%82%E8%BF%B0/">
+                     
+										    概述
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										Tool
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/Tool/Anki/">
+                     
+										    Anki
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/Tool/Clash/">
+                     
+										    Clash
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/Tool/Electron/">
+                     
+										    Electron
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/06/26/Tool/Git/">
+                     
+										    Git
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/06/26/Tool/GoogleChrome/">
+                     
+										    GoogleChrome
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/Tool/Graphviz/">
+                     
+										    Graphviz
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/Tool/He3/">
+                     
+										    He3
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/05/26/Tool/Hexo/">
+                     
+										    Hexo
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/Tool/JetBrainTool/">
+                     
+										    JetBrainTool
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/Tool/LaTex/">
+                     
+										    LaTex
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/Tool/License/">
+                     
+										    License
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/Tool/PDManer/">
+                     
+										    PDManer
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/Tool/Poedit/">
+                     
+										    Poedit
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/06/26/Tool/Postman/">
+                     
+										    Postman
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/06/29/Tool/SSH/">
+                     
+										    SSH
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/12/24/Tool/Slidev/">
+                     
+										    Slidev
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/Tool/StylePix/">
+                     
+										    StylePix
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/11/30/Tool/VMware/">
+                     
+										    VMware
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/06/29/Tool/VSCode/">
+                     
+										    VSCode
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/Tool/VisualStudioCode/">
+                     
+										    VisualStudioCode
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/Tool/WinMerge/">
+                     
+										    WinMerge
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/Tool/Windows%E5%B7%A5%E5%85%B7/">
+                     
+										    Windows工具
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/06/29/Tool/cURL/">
+                     
+										    cURL
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/Tool/labelImg/">
+                     
+										    labelImg
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/Tool/%E4%BB%A3%E7%A0%81%E7%94%9F%E6%88%90%E5%B7%A5%E5%85%B7/">
+                     
+										    代码生成工具
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/12/24/Tool/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/">
+                     
+										    内网穿透
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/Tool/%E5%BC%80%E5%8F%91%E4%B8%93%E7%94%A8%E7%BC%A9%E7%95%A5%E8%AF%8D/">
+                     
+										    开发专用缩略词
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/Tool/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE%E5%B7%A5%E5%85%B7/">
+                     
+										    思维导图工具
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/Tool/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/">
+                     
+										    正则表达式
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/Tool/%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/">
+                     
+										    测试工具
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/Tool/%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE%E5%99%A8/">
+                     
+										    视频播放器
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/Tool/%E8%AF%AD%E4%B9%89%E5%8C%96%E7%89%88%E6%9C%AC/">
+                     
+										    语义化版本
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/Tool/%E8%B4%9D%E9%94%90/">
+                     
+										    贝锐
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										WebDevelopment
+									</a>
+									
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										Container
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2024/12/24/WebDevelopment/Container/Docker/">
+                     
+										    Docker
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/WebDevelopment/Container/VMware/">
+                     
+										    VMware
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										Pandect
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2024/06/29/WebDevelopment/Pandect/README/">
+                     
+										    README
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/WebDevelopment/Pandect/RPC/">
+                     
+										    RPC
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/WebDevelopment/Pandect/Ribbon%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1+OpenFeign%E8%BF%9C%E7%A8%8BHTTP%E8%B0%83%E7%94%A8/">
+                     
+										    Ribbon负载均衡+OpenFeign远程HTTP调用
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/WebDevelopment/Pandect/Web%E8%AF%B7%E6%B1%82%E9%93%BE%E8%B7%AF%E4%B8%AD%E7%9A%84%E7%BC%93%E5%AD%98/">
+                     
+										    Web请求链路中的缓存
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/WebDevelopment/Pandect/%E5%A3%B0%E6%98%8E%E5%BC%8F%E4%BA%8B%E5%8A%A1%E8%BF%98%E6%98%AF%E7%BC%96%E7%A8%8B%E5%BC%8F%E4%BA%8B%E5%8A%A1/">
+                     
+										    声明式事务还是编程式事务
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/WebDevelopment/Pandect/%E6%9E%B6%E6%9E%84/">
+                     
+										    架构
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/WebDevelopment/Pandect/%E7%BB%9F%E4%B8%80%E6%97%A5%E5%BF%97/">
+                     
+										    统一日志
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/WebDevelopment/Pandect/%E7%BD%91%E7%AB%99%E6%94%BB%E5%87%BB/">
+                     
+										    网站攻击
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/WebDevelopment/Pandect/%E8%B7%A8%E5%9F%9F/">
+                     
+										    跨域
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/WebDevelopment/Pandect/%E9%80%9F%E8%AE%B0%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83/">
+                     
+										    速记命名规范
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/WebDevelopment/Pandect/%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%BF%83%EF%BC%8C%E6%9C%8D%E5%8A%A1%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0%E9%85%8D%E7%BD%AE/">
+                     
+										    配置中心，服务自动更新配置
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/WebDevelopment/Pandect/%E9%94%81/">
+                     
+										    锁
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										PythonWeb
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/WebDevelopment/PythonWeb/Bottle/">
+                     
+										    Bottle
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/10/07/WebDevelopment/PythonWeb/Django/">
+                     
+										    Django
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/WebDevelopment/PythonWeb/FastAPI/">
+                     
+										    FastAPI
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/06/10/WebDevelopment/PythonWeb/Flask/">
+                     
+										    Flask
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/WebDevelopment/PythonWeb/README/">
+                     
+										    README
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/WebDevelopment/PythonWeb/Tornado/">
+                     
+										    Tornado
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										WebServer
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/WebDevelopment/WebServer/CGI/">
+                     
+										    CGI
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/WebDevelopment/WebServer/LVS/">
+                     
+										    LVS
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/WebDevelopment/WebServer/gunicorn/">
+                     
+										    gunicorn
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/WebDevelopment/WebServer/uWSGI/">
+                     
+										    uWSGI
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/WebDevelopment/WebServer/uvicron/">
+                     
+										    uvicron
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/WebDevelopment/Web%E5%BC%80%E5%8F%91%E5%85%B1%E8%AF%86/">
+                     
+										    Web开发共识
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/06/10/WebDevelopment/%E5%88%86%E5%B8%83%E5%BC%8F%E5%94%AF%E4%B8%80ID/">
+                     
+										    分布式唯一ID
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/WebDevelopment/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E7%94%9F%E6%80%81/">
+                     
+										    微服务生态
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/05/30/WebDevelopment/%E6%8E%A5%E5%8F%A3%E8%AE%BE%E8%AE%A1/">
+                     
+										    接口设计
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2024/05/27/WebDevelopment/%E6%95%B0%E6%8D%AE%E5%88%86%E9%A1%B5%E6%96%B9%E5%BC%8F/">
+                     
+										    数据分页方式
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/WebDevelopment/%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C/">
+                     
+										    文件操作
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/WebDevelopment/%E7%BC%93%E5%AD%98%E6%96%B9%E6%A1%88/">
+                     
+										    缓存方案
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2025/02/21/httpshelp/">
+                     
+										    httpshelp
+                     
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+		</div>
+	</div>
+</div>
+
+	<!-- 引入正文 -->
+	<div id="content" class="content">
+		<h1 id="article-title">
+	底层数据结构
+</h1>
+
+<!-- meta -->
+<div class="article-meta">
+	
+
+	<span>予早</span>
+	<span>2024-10-17 15:47:24</span>
+
+  <div id="article-categories">
+    
+		  <span>Categories：</span>
+      
+    
+
+    
+		    <span>Tags：</span>
+        
+    
+  </div>
+
+</div>
+
+<!-- content -->
+<div id="article-content">
+	<p><strong>不支持编码回退</strong>，编码转换不可逆<br>主要是数据增删频繁时，数据向压缩编码转换非常消耗CPU，得不偿失</p>
+<p>object encoding key</p>
+<p>debug object v</p>
+<p>查看编码</p>
+<p><a target="_blank" rel="noopener" href="https://redis.io/docs/latest/commands/?group=generic&name=object">https://redis.io/docs/latest/commands/?group=generic&amp;name=object</a></p>
+<h2 id="底层数据结构"><a href="#底层数据结构" class="headerlink" title="底层数据结构"></a>底层数据结构</h2><h3 id="基本数据结构"><a href="#基本数据结构" class="headerlink" title="基本数据结构"></a>基本数据结构</h3><h4 id="SDS"><a href="#SDS" class="headerlink" title="SDS"></a>SDS</h4><p>本质是一个字符数组。</p>
+<p>结构</p>
+<img src="/2024/10/17/DatabaseSystem/Redis/4.%E5%BA%95%E5%B1%82%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/1653984624671.png" class="" width="1653984624671">
+
+<p>一个包含字符串“name”的sds结构如下：</p>
+<img src="/2024/10/17/DatabaseSystem/Redis/4.%E5%BA%95%E5%B1%82%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/image-20240704201005303.png" class="" title="image-20240704201005303">
+
+<p>操作</p>
+<p>存储上限为 512M</p>
+<p>SDS 支持动态扩容：</p>
+<ul>
+<li>字符串 a 要拼接上字符串 b，且字符串 a 剩余空间不足直接拼接 b。</li>
+<li>若两个字符串占用小于 1M，则 a 扩容后空间为 a与b字符串长度之和的两倍 + 1。</li>
+<li>若两个字符串占用大于 1M，则 a 扩容后空间为 a与b字符串长度之和 + 1M + 1。</li>
+</ul>
+<h4 id="IntSet"><a href="#IntSet" class="headerlink" title="IntSet"></a>IntSet</h4><p>本质是一个有序整数数组</p>
+<p>结构</p>
+<ul>
+<li>encoding 指明整数数组中每个元素占用字节数</li>
+<li>lenght 指明元素个数</li>
+<li>contents 中存储集合数据</li>
+</ul>
+<img src="/2024/10/17/DatabaseSystem/Redis/4.%E5%BA%95%E5%B1%82%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/1653984923322.png" class="" width="1653984923322">
+
+<img src="/2024/10/17/DatabaseSystem/Redis/4.%E5%BA%95%E5%B1%82%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/1653984942385.png" class="" width="1653984942385">
+
+<p>操作</p>
+<ul>
+<li>inset 由整数数组 contents 保存集合数据，数据从小到大有序排序，元素保证唯一。</li>
+<li>intset 查找元素采用二分查找算法。</li>
+<li>自适应编码，若 intset 中存储的数据均为 2 字节整数，此时插入一个 8 字节整数，此时 intset 编码方式升级为 8 字节，所有数据均转为 8 字节数据。</li>
+</ul>
+<p>若有一个intset，元素为{5,10，20}，采用的编码是INTSET_ENC_INT16，则每个整数占2字节，向其中添加一个数字：50000，这个数字超出了int16_t的范围，intset会自动升级编码方式到合适的大小。</p>
+<ul>
+<li>升级编码为INTSET_ENC_INT32, 每个整数占4字节，并按照新的编码方式及元素个数扩容数组</li>
+<li>倒序依次将数组中的元素拷贝到扩容后的正确位置</li>
+<li>将待添加的元素放入数组末尾</li>
+<li>最后，将inset的encoding属性改为INTSET_ENC_INT32，将length属性改为4</li>
+</ul>
+<img src="/2024/10/17/DatabaseSystem/Redis/4.%E5%BA%95%E5%B1%82%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/image-20240706220335753.png" class="" title="image-20240706220335753">
+
+<img src="/2024/10/17/DatabaseSystem/Redis/4.%E5%BA%95%E5%B1%82%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/image-20240706220134182.png" class="" title="image-20240706220134182">
+
+<img src="/2024/10/17/DatabaseSystem/Redis/4.%E5%BA%95%E5%B1%82%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/image-20240706220203153.png" class="" title="image-20240706220203153">
+
+<img src="/2024/10/17/DatabaseSystem/Redis/4.%E5%BA%95%E5%B1%82%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/image-20240706220435309.png" class="" title="image-20240706220435309">
+
+<img src="/2024/10/17/DatabaseSystem/Redis/4.%E5%BA%95%E5%B1%82%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/image-20240706220539884.png" class="" title="image-20240706220539884">
+
+
+
+<p>添加元素</p>
+<pre><code class="c">intset *intsetAdd(intset *is, int64_t value, uint8_t *success) &#123;
+    uint8_t valenc = _intsetValueEncoding(value);// 获取当前值编码
+    uint32_t pos; // 要插入的位置
+    if (success) *success = 1;
+    // 判断编码是不是超过了当前intset的编码
+    if (valenc &gt; intrev32ifbe(is-&gt;encoding)) &#123;
+        // 超出编码，需要升级
+        return intsetUpgradeAndAdd(is,value);
+    &#125; else &#123;
+        // 在当前intset中查找值与value一样的元素的角标pos
+        if (intsetSearch(is,value,&amp;pos)) &#123;
+            if (success) *success = 0; //如果找到了，则无需插入，直接结束并返回失败
+            return is;
+        &#125;
+        // 数组扩容
+        is = intsetResize(is,intrev32ifbe(is-&gt;length)+1);
+        // 移动数组中pos之后的元素到pos+1，给新元素腾出空间
+        if (pos &lt; intrev32ifbe(is-&gt;length)) intsetMoveTail(is,pos,pos+1);
+    &#125;
+    // 插入新元素
+    _intsetSet(is,pos,value);
+    // 重置元素长度
+    is-&gt;length = intrev32ifbe(intrev32ifbe(is-&gt;length)+1);
+    return is;
+&#125;
+</code></pre>
+<p>编码升级</p>
+<pre><code class="c">static intset *intsetUpgradeAndAdd(intset *is, int64_t value) &#123;
+    // 获取当前intset编码
+    uint8_t curenc = intrev32ifbe(is-&gt;encoding);
+    // 获取新编码
+    uint8_t newenc = _intsetValueEncoding(value);
+    // 获取元素个数
+    int length = intrev32ifbe(is-&gt;length); 
+    // 判断新元素是大于0还是小于0 ，小于0插入队首、大于0插入队尾
+    int prepend = value &lt; 0 ? 1 : 0;
+    // 重置编码为新编码
+    is-&gt;encoding = intrev32ifbe(newenc);
+    // 重置数组大小
+    is = intsetResize(is,intrev32ifbe(is-&gt;length)+1);
+    // 倒序遍历，逐个搬运元素到新的位置，_intsetGetEncoded按照旧编码方式查找旧元素
+    while(length--) // _intsetSet按照新编码方式插入新元素
+        _intsetSet(is,length+prepend,_intsetGetEncoded(is,length,curenc));
+    /* 插入新元素，prepend决定是队首还是队尾*/
+    if (prepend)
+        _intsetSet(is,0,value);
+    else
+        _intsetSet(is,intrev32ifbe(is-&gt;length),value);
+    // 修改数组长度
+    is-&gt;length = intrev32ifbe(intrev32ifbe(is-&gt;length)+1);
+    return is;
+&#125;
+</code></pre>
+<h4 id="Dict"><a href="#Dict" class="headerlink" title="Dict"></a>Dict</h4><p>Redis 中映射关系由 dict 实现，dict 持有 dictht，dictht 持有 dictEntry 二维数组，dictEntry 存储键值对。</p>
+<h5 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h5><pre><code class="c">typedef struct dict &#123;
+    dictType *type; // dict类型，内置不同的hash函数
+    void *privdata;     // 私有数据，在做特殊hash运算时用
+    dictht ht[2]; // 一个Dict包含两个哈希表，其中一个是当前数据，另一个一般是空，rehash时使用
+    long rehashidx;   // rehash的进度，-1表示未进行
+    int16_t pauserehash; // rehash是否暂停，1则暂停，0则继续
+&#125; dict;
+
+typedef struct dictht &#123;
+    // entry数组
+    // 数组中保存的是指向entry的指针
+    dictEntry **table; 
+    // 哈希表大小
+    unsigned long size;     
+    // 哈希表大小的掩码，总等于size - 1
+    unsigned long sizemask;     
+    // entry个数
+    unsigned long used; 
+&#125; dictht;
+
+typedef struct dictEntry &#123;
+    void *key; // 键
+    union &#123;
+        void *val;
+        uint64_t u64;
+        int64_t s64;
+        double d;
+    &#125; v; // 值
+    // 下一个Entry的指针
+    struct dictEntry *next; 
+&#125; dictEntry;
+</code></pre>
+<img src="/2024/10/17/DatabaseSystem/Redis/4.%E5%BA%95%E5%B1%82%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/1653985640422.png" class="" width="1653985640422">
+
+<img src="/2024/10/17/DatabaseSystem/Redis/4.%E5%BA%95%E5%B1%82%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/image-20240706132535043.png" class="" title="image-20240706132535043">
+
+
+
+<h5 id="添加元素时自动扩容"><a href="#添加元素时自动扩容" class="headerlink" title="添加元素时自动扩容"></a>添加元素时自动扩容</h5><p>Dict中的HashTable就是数组结合单向链表的实现，当集合中元素较多时，必然导致哈希冲突增多，链表过长，则查询效率会大大降低。</p>
+<p>Dict在每次新增键值对时都会检查负载因子（LoadFactor &#x3D; used&#x2F;size） ，满足以下两种情况时会触发哈希表扩容：</p>
+<ul>
+<li>哈希表的 LoadFactor &gt;&#x3D; 1，并且服务器没有执行 BGSAVE 或者 BGREWRITEAOF 等后台进程；</li>
+<li>哈希表的 LoadFactor &gt; 5 ；</li>
+</ul>
+<pre><code class="c">static int _dictExpandIfNeeded(dict *d)&#123;
+    // 如果正在rehash，则返回ok
+    if (dictIsRehashing(d)) return DICT_OK;
+    // 如果哈希表为空，则初始化哈希表为默认大小：4
+    if (d-&gt;ht[0].size == 0) return dictExpand(d, DICT_HT_INITIAL_SIZE);
+    // 当负载因子（used/size）达到1以上，并且当前没有进行bgrewrite等子进程操作
+    // 或者负载因子超过5，则进行 dictExpand ，也就是扩容
+    if (d-&gt;ht[0].used &gt;= d-&gt;ht[0].size &amp;&amp;
+        (dict_can_resize || d-&gt;ht[0].used/d-&gt;ht[0].size &gt; dict_force_resize_ratio)&#123;
+        // 扩容大小为used + 1，底层会对扩容大小做判断，实际上找的是第一个大于等于 used+1 的 2^n
+        return dictExpand(d, d-&gt;ht[0].used + 1);
+    &#125;
+    return DICT_OK;
+&#125;
+</code></pre>
+<h5 id="删除元素时自动缩容"><a href="#删除元素时自动缩容" class="headerlink" title="删除元素时自动缩容"></a>删除元素时自动缩容</h5><p>Dict除了扩容以外，每次删除元素时，也会对负载因子做检查，当LoadFactor &lt; 0.1 时，会做哈希表收缩：</p>
+<h5 id="自动扩缩容时-rehash"><a href="#自动扩缩容时-rehash" class="headerlink" title="自动扩缩容时 rehash"></a>自动扩缩容时 rehash</h5><p>不管是扩容还是收缩，必定会创建新的哈希表，导致哈希表的size和sizemask变化，而key的查询与sizemask有关。因此必须对哈希表中的每一个key重新计算索引，插入新的哈希表，这个过程称为rehash。基本思路是这样的：</p>
+<ol>
+<li>计算新hash表的realeSize，值取决于当前要做的是扩容还是收缩：<ul>
+<li>如果是扩容，则新size为第一个大于等于dict.ht[0].used + 1的2^n</li>
+<li>如果是收缩，则新size为第一个大于等于dict.ht[0].used的2^n （不得小于4）</li>
+</ul>
+</li>
+<li>按照新的realeSize申请内存空间，创建dictht，并赋值给dict.ht[1]</li>
+<li>设置dict.rehashidx &#x3D; 0，标示开始rehash</li>
+<li>将dict.ht[0]中的每一个dictEntry都rehash到dict.ht[1]</li>
+<li>将dict.ht[1]赋值给dict.ht[0]，给dict.ht[1]初始化为空哈希表，释放原来的dict.ht[0]的内存</li>
+</ol>
+<p>Dict的rehash并不是一次性完成的。若Dict中包含数百万的entry，要在一次rehash完成，极有可能导致主线程阻塞。因此Dict的rehash是分多次、渐进式的完成，因此称为渐进式rehash。主要流程如下：</p>
+<ol>
+<li>计算新hash表的realeSize，值取决于当前要做的是扩容还是收缩：<ul>
+<li>如果是扩容，则新size为第一个大于等于dict.ht[0].used + 1的2^n</li>
+<li>如果是收缩，则新size为第一个大于等于dict.ht[0].used的2^n （不得小于4）</li>
+</ul>
+</li>
+<li>按照新的realeSize申请内存空间，创建dictht，并赋值给dict.ht[1]</li>
+<li>设置dict.rehashidx &#x3D; 0，标示开始rehash</li>
+<li>每次执行新增、查询、修改、删除操作时，都检查一下dict.rehashidx是否大于-1，如果是则将dict.ht[0].table[rehashidx]的entry链表rehash到dict.ht[1]，并且将rehashidx++。直至dict.ht[0]的所有数据都rehash到dict.ht[1]</li>
+<li>将dict.ht[1]赋值给dict.ht[0]，给dict.ht[1]初始化为空哈希表，释放原来的dict.ht[0]的内存</li>
+<li>将rehashidx赋值为-1，代表rehash结束</li>
+<li>在rehash过程中，新增操作，则直接写入ht[1]，查询、修改和删除则会在dict.ht[0]和dict.ht[1]依次查找并执行。这样可以确保ht[0]的数据只减不增，随着rehash最终为空</li>
+</ol>
+<h4 id="LinkedList"><a href="#LinkedList" class="headerlink" title="LinkedList"></a>LinkedList</h4><p>双向链表，可以从双端访问，内存占用较高，内存碎片较多</p>
+<h4 id="ZipList"><a href="#ZipList" class="headerlink" title="ZipList"></a>ZipList</h4><p>压缩列表，可以从双端访问，内存占用低，存储上限低，内存连续</p>
+<p>ZipList 是一种特殊的“双端链表” ，由一系列特殊编码的连续内存块组成。可以在任意一端进行压入&#x2F;弹出操作, 并且该操作的时间复杂度为 O(1)。</p>
+<p>但是内存连续，因为一个指针需要8个字节（因为是64位系统），双向链表每个结点需要两个指针就是16个字节，ZipList通过编码写明结点数据类型、当前结点长度、前一结点长度，总消耗不超过10byte，所以一定程度上对数据进行了压缩，压缩的代价是内存连续了</p>
+<h5 id="结构-1"><a href="#结构-1" class="headerlink" title="结构"></a>结构</h5><img src="/2024/10/17/DatabaseSystem/Redis/4.%E5%BA%95%E5%B1%82%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/image-20240706135956984.png" class="" title="image-20240706135956984">
+
+<table>
+<thead>
+<tr>
+<th><strong>属性</strong></th>
+<th><strong>类型</strong></th>
+<th><strong>长度</strong></th>
+<th><strong>用途</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>zlbytes</td>
+<td>uint32_t</td>
+<td>4 字节</td>
+<td>记录整个压缩列表占用的内存字节数</td>
+</tr>
+<tr>
+<td>zltail</td>
+<td>uint32_t</td>
+<td>4 字节</td>
+<td>记录压缩列表表尾节点距离压缩列表的起始地址有多少字节，通过这个偏移量，可以确定表尾节点的地址。</td>
+</tr>
+<tr>
+<td>zllen</td>
+<td>uint16_t</td>
+<td>2 字节</td>
+<td>记录了压缩列表包含的节点数量。 最大值为UINT16_MAX （65534），如果超过这个值，此处会记录为65535，但节点的真实数量需要遍历整个压缩列表才能计算得出。</td>
+</tr>
+<tr>
+<td>entry</td>
+<td>列表节点</td>
+<td>不定</td>
+<td>压缩列表包含的各个节点，节点的长度由节点保存的内容决定。</td>
+</tr>
+<tr>
+<td>zlend</td>
+<td>uint8_t</td>
+<td>1 字节</td>
+<td>特殊值 0xFF （十进制 255 ），用于标记压缩列表的末端。</td>
+</tr>
+</tbody></table>
+<p>ZipListEntry</p>
+<p>ZipList 中的 Entry 并不像普通链表那样记录前后节点的指针，因为记录两个指针要占用16个字节，浪费内存。而是采用了下面的结构：</p>
+<img src="/2024/10/17/DatabaseSystem/Redis/4.%E5%BA%95%E5%B1%82%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/1653986055253.png" class="" width="1653986055253">
+
+<ul>
+<li><p>previous_entry_length：前一节点的长度，占1个或5个字节。</p>
+<ul>
+<li>如果前一节点的长度小于254字节，则采用1个字节来保存这个长度值</li>
+<li>如果前一节点的长度大于等于254字节，则采用5个字节来保存这个长度值，第一个字节为 0xfe，后四个字节才是真实长度数据</li>
+</ul>
+</li>
+<li><p>encoding：编码属性，记录content的数据类型（字符串还是整数）以及长度，占用1个、2个或5个字节</p>
+</li>
+<li><p>contents：负责保存节点的数据，可以是字符串或整数</p>
+</li>
+</ul>
+<p>ZipList中所有存储长度的数值均采用小端字节序，即低位字节在前，高位字节在后。例如：数值0x1234，采用小端字节序后实际存储值为：0x3412</p>
+<h5 id="连锁更新问题"><a href="#连锁更新问题" class="headerlink" title="连锁更新问题"></a>连锁更新问题</h5><p>ZipList的每个Entry都包含previous_entry_length来记录上一个节点的大小，长度是1个或5个字节：</p>
+<ul>
+<li>如果前一节点的长度小于254字节，则采用1个字节来保存这个长度值</li>
+<li>如果前一节点的长度大于等于254字节，则采用5个字节来保存这个长度值，第一个字节为0xfe，后四个字节才是真实长度数据</li>
+</ul>
+<p>若有N个连续的、长度为250~253字节之间的entry，因此entry的previous_entry_length属性用1个字节即可表示。</p>
+<img src="/2024/10/17/DatabaseSystem/Redis/4.%E5%BA%95%E5%B1%82%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/image-20240706224219126.png" class="" title="image-20240706224219126">
+
+<img src="/2024/10/17/DatabaseSystem/Redis/4.%E5%BA%95%E5%B1%82%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/image-20240706224241939.png" class="" title="image-20240706224241939">
+
+<p>此时左侧插入一个 254字节的entry，后续若干 entry 必须全部更新。</p>
+<img src="/2024/10/17/DatabaseSystem/Redis/4.%E5%BA%95%E5%B1%82%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/image-20240706224415659.png" class="" title="image-20240706224415659">
+
+<img src="/2024/10/17/DatabaseSystem/Redis/4.%E5%BA%95%E5%B1%82%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/image-20240706224459526.png" class="" title="image-20240706224459526">
+
+<p>ZipList这种特殊情况下产生的连续多次空间扩展操作称之为连锁更新（Cascade Update）。新增、删除都可能导致连锁更新的发生。</p>
+<h4 id="QuickList"><a href="#QuickList" class="headerlink" title="QuickList"></a>QuickList</h4><p>LinkedList + ZipList，可以从双端访问，内存占用较低，包含多个ZipList，存储上限高</p>
+<ul>
+<li>是一个节点为ZipList的双端链表</li>
+<li>节点采用ZipList，解决了传统链表的内存占用问题</li>
+<li>控制了ZipList大小，解决连续内存空间申请效率问题</li>
+</ul>
+<p>QuickList 的出现用于解决 ZipList 的弊端：</p>
+<ol>
+<li>ZipList虽然节省内存，但申请内存必须是连续空间，如果内存占用较多，申请内存效率很低。为了缓解这个问题，必须限制ZipList的长度和entry大小。</li>
+<li>但是我们要存储大量数据，超出了ZipList最佳的上限。可以创建多个ZipList来分片存储数据。</li>
+<li>数据拆分后比较分散，不方便管理和查找。Redis在3.2版本引入了新的数据结构QuickList，它是一个双端链表，只不过链表中的每个节点都是一个ZipList。</li>
+</ol>
+<p>结构</p>
+<pre><code class="c">/* quicklist is a 40 byte struct (on 64-bit systems) describing a quicklist.
+ * &#39;count&#39; is the number of total entries.
+ * &#39;len&#39; is the number of quicklist nodes.
+ * &#39;compress&#39; is: 0 if compression disabled, otherwise it&#39;s the number
+ *                of quicklistNodes to leave uncompressed at ends of quicklist.
+ * &#39;fill&#39; is the user-requested (or default) fill factor.
+ * &#39;bookmarks are an optional feature that is used by realloc this struct,
+ *      so that they don&#39;t consume memory when not used. */
+typedef struct quicklist &#123;
+    quicklistNode *head;
+    quicklistNode *tail;
+    unsigned long count;        /* total count of all entries in all listpacks */
+    unsigned long len;          /* number of quicklistNodes */
+    signed int fill : QL_FILL_BITS;       /* fill factor for individual nodes */
+    unsigned int compress : QL_COMP_BITS; /* depth of end nodes not to compress;0=off */
+    unsigned int bookmark_count: QL_BM_BITS;
+    quicklistBookmark bookmarks[];
+&#125; quicklist;
+
+
+/* quicklistNode is a 32 byte struct describing a listpack for a quicklist.
+ * We use bit fields keep the quicklistNode at 32 bytes.
+ * count: 16 bits, max 65536 (max lp bytes is 65k, so max count actually &lt; 32k).
+ * encoding: 2 bits, RAW=1, LZF=2.
+ * container: 2 bits, PLAIN=1 (a single item as char array), PACKED=2 (listpack with multiple items).
+ * recompress: 1 bit, bool, true if node is temporary decompressed for usage.
+ * attempted_compress: 1 bit, boolean, used for verifying during testing.
+ * extra: 10 bits, free for future use; pads out the remainder of 32 bits */
+typedef struct quicklistNode &#123;
+    struct quicklistNode *prev;
+    struct quicklistNode *next;
+    unsigned char *entry;
+    size_t sz;             /* entry size in bytes */
+    unsigned int count : 16;     /* count of items in listpack */
+    unsigned int encoding : 2;   /* RAW==1 or LZF==2 */
+    unsigned int container : 2;  /* PLAIN==1 or PACKED==2 */
+    unsigned int recompress : 1; /* was this node previous compressed? */
+    unsigned int attempted_compress : 1; /* node can&#39;t compress; too small */
+    unsigned int extra : 10; /* more bits to steal for future usage */
+&#125; quicklistNode;
+
+/* Bookmarks are padded with realloc at the end of of the quicklist struct.
+ * They should only be used for very big lists if thousands of nodes were the
+ * excess memory usage is negligible, and there&#39;s a real need to iterate on them
+ * in portions.
+ * When not used, they don&#39;t add any memory overhead, but when used and then
+ * deleted, some overhead remains (to avoid resonance).
+ * The number of bookmarks used should be kept to minimum since it also adds
+ * overhead on node deletion (searching for a bookmark to update). */
+typedef struct quicklistBookmark &#123;
+    quicklistNode *node;
+    char *name;
+&#125; quicklistBookmark;
+</code></pre>
+<pre><code class="c">typedef struct quicklist &#123;
+    // 头节点指针
+    quicklistNode *head; 
+    // 尾节点指针
+    quicklistNode *tail; 
+    // 所有ziplist的entry的数量
+    unsigned long count;    
+    // ziplists总数量
+    unsigned long len;
+    // ziplist的entry上限，默认值 -2 
+    int fill : QL_FILL_BITS;         // 首尾不压缩的节点数量
+    unsigned int compress : QL_COMP_BITS;
+    // 内存重分配时的书签数量及数组，一般用不到
+    unsigned int bookmark_count: QL_BM_BITS;
+    quicklistBookmark bookmarks[];
+&#125; quicklist;
+
+typedef struct quicklistNode &#123;
+    // 前一个节点指针
+    struct quicklistNode *prev;
+    // 下一个节点指针
+    struct quicklistNode *next;
+    // 当前节点的ZipList指针
+    unsigned char *zl;
+    // 当前节点的ZipList的字节大小
+    unsigned int sz;
+    // 当前节点的ZipList的entry个数
+    unsigned int count : 16;  
+    // 编码方式：1，ZipList; 2，lzf压缩模式
+    unsigned int encoding : 2;
+    // 数据容器类型（预留）：1，其它；2，ZipList
+    unsigned int container : 2;
+    // 是否被解压缩。1：则说明被解压了，将来要重新压缩
+    unsigned int recompress : 1;
+    unsigned int attempted_compress : 1; //测试用
+    unsigned int extra : 10; /*预留字段*/
+&#125; quicklistNode;
+</code></pre>
+<img src="/2024/10/17/DatabaseSystem/Redis/4.%E5%BA%95%E5%B1%82%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/image-20240706142720699.png" class="" title="image-20240706142720699">
+
+
+
+<p>为了避免QuickList中的每个ZipList中entry过多，Redis提供了一个配置项：list-max-ziplist-size来限制。</p>
+<ul>
+<li>如果值为正，则代表ZipList的允许的entry个数的最大值</li>
+<li>如果值为负，则代表ZipList的最大内存大小，分5种情况：</li>
+</ul>
+<ul>
+<li>-1：每个ZipList的内存占用不能超过4kb</li>
+<li>-2：每个ZipList的内存占用不能超过8kb</li>
+<li>-3：每个ZipList的内存占用不能超过16kb</li>
+<li>-4：每个ZipList的内存占用不能超过32kb</li>
+<li>-5：每个ZipList的内存占用不能超过64kb</li>
+</ul>
+<p>其默认值为 -2：</p>
+<img src="/2024/10/17/DatabaseSystem/Redis/4.%E5%BA%95%E5%B1%82%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/1653986642777.png" class="" width="1653986642777">
+
+<p>除了控制ZipList的大小，QuickList还可以对节点的ZipList做压缩。通过配置项list-compress-depth来控制。因为链表一般都是从首尾访问较多，所以首尾是不压缩的。这个参数是控制首尾不压缩的节点个数：<br>0：特殊值，代表不压缩<br>1：标示QuickList的首尾各有1个节点不压缩，中间节点压缩<br>2：标示QuickList的首尾各有2个节点不压缩，中间节点压缩<br>以此类推<br>默认值：</p>
+<img src="/2024/10/17/DatabaseSystem/Redis/4.%E5%BA%95%E5%B1%82%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/image-20240706230555137.png" class="" title="image-20240706230555137">
+
+
+
+<h4 id="SkipList"><a href="#SkipList" class="headerlink" title="SkipList"></a>SkipList</h4><ul>
+<li>跳跃表是一个双向链表，每个节点都包含score和ele值</li>
+<li>节点按照score值排序，score值一样则按照ele字典排序</li>
+<li>使用多层指针做索引</li>
+<li>每个节点都可以包含多层指针，层数是1到32之间的随机数</li>
+<li>不同层指针到下一个节点的跨度不同，层级越高，跨度越大</li>
+<li>增删改查效率与红黑树基本一致，实现却更简单</li>
+<li>元素按照升序排列存储</li>
+<li>节点可能包含多个指针，指针跨度不同</li>
+</ul>
+<pre><code class="c">// t_zset.c
+typedef struct zskiplist &#123;
+    // 头尾节点指针
+    struct zskiplistNode *header, *tail;
+    // 节点数量
+    unsigned long length;
+    // 最大的索引层级，默认是1
+    int level;
+&#125; zskiplist;
+
+// t_zset.c
+typedef struct zskiplistNode &#123;
+    sds ele; // 节点存储的值
+    double score;// 节点分数，排序、查找用
+    struct zskiplistNode *backward; // 前一个节点指针
+    struct zskiplistLevel &#123;
+        struct zskiplistNode *forward; // 下一个节点指针
+        unsigned long span; // 索引跨度
+    &#125; level[]; // 多级索引数组
+&#125; zskiplistNode;
+</code></pre>
+<img src="/2024/10/17/DatabaseSystem/Redis/4.%E5%BA%95%E5%B1%82%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/1653986771309.png" class="" width="1653986771309">
+
+
+
+<img src="/2024/10/17/DatabaseSystem/Redis/4.%E5%BA%95%E5%B1%82%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/image-20240706231214914.png" class="" title="image-20240706231214914">
+
+
+
+<h3 id="Redis-数据类型实现"><a href="#Redis-数据类型实现" class="headerlink" title="Redis 数据类型实现"></a>Redis 数据类型实现</h3><h4 id="统一抽象-redisObject"><a href="#统一抽象-redisObject" class="headerlink" title="统一抽象 redisObject"></a>统一抽象 redisObject</h4><p>Redis 中数据被统一抽象为 redisObject，redisObject 存储某一类型数据，某类型数据根据当前数据的具体情况采用某编码方式，某编码方式采用某底层数据结构实现。具体实现遵循<code>数据类型-&gt;编码方式-&gt;底层数据结构</code>。</p>
+<img src="/2024/10/17/DatabaseSystem/Redis/4.%E5%BA%95%E5%B1%82%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/1653986956618.png" class="" width="1653986956618">
+
+<ul>
+<li>type：指明当前 redisObject 存储数据的类型</li>
+<li>encoding：指明当前 redisObject 存储数据的编码方式</li>
+</ul>
+<pre><code class="c">/* Objects encoding. Some kind of objects like Strings and Hashes can be
+ * internally represented in multiple ways. The &#39;encoding&#39; field of the object
+ * is set to one of this fields for this object. */
+#define OBJ_ENCODING_RAW 0     /* Raw representation */
+#define OBJ_ENCODING_INT 1     /* Encoded as integer */
+#define OBJ_ENCODING_HT 2      /* Encoded as hash table */
+#define OBJ_ENCODING_ZIPMAP 3  /* No longer used: old hash encoding. */
+#define OBJ_ENCODING_LINKEDLIST 4 /* No longer used: old list encoding. */
+#define OBJ_ENCODING_ZIPLIST 5 /* No longer used: old list/hash/zset encoding. */
+#define OBJ_ENCODING_INTSET 6  /* Encoded as intset */
+#define OBJ_ENCODING_SKIPLIST 7  /* Encoded as skiplist */
+#define OBJ_ENCODING_EMBSTR 8  /* Embedded sds string encoding */
+#define OBJ_ENCODING_QUICKLIST 9 /* Encoded as linked list of listpacks */
+#define OBJ_ENCODING_STREAM 10 /* Encoded as a radix tree of listpacks */
+#define OBJ_ENCODING_LISTPACK 11 /* Encoded as a listpack */
+
+#define LRU_BITS 24
+
+typedef struct redisObject &#123;
+    unsigned type:4; //4bit
+    unsigned encoding:4; //4bit
+    unsigned lru:LRU_BITS; /* LRU time (relative to global lru_clock) or
+                            * LFU data (least significant 8 bits frequency
+                            * and most significant 16 bits access time). */
+                            //24bit
+    int refcount; //4byte
+    void *ptr; //8byte
+&#125; robj;
+</code></pre>
+<p>Redis的编码方式</p>
+<p>Redis中会根据存储的数据类型不同，选择不同的编码方式，共包含11种不同类型：</p>
+<table>
+<thead>
+<tr>
+<th><strong>编号</strong></th>
+<th><strong>编码方式</strong></th>
+<th><strong>说明</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>0</td>
+<td>OBJ_ENCODING_RAW</td>
+<td>raw编码动态字符串</td>
+</tr>
+<tr>
+<td>1</td>
+<td>OBJ_ENCODING_INT</td>
+<td>long类型的整数的字符串</td>
+</tr>
+<tr>
+<td>2</td>
+<td>OBJ_ENCODING_HT</td>
+<td>hash表（字典dict）</td>
+</tr>
+<tr>
+<td>3</td>
+<td>OBJ_ENCODING_ZIPMAP</td>
+<td>已废弃</td>
+</tr>
+<tr>
+<td>4</td>
+<td>OBJ_ENCODING_LINKEDLIST</td>
+<td>双端链表</td>
+</tr>
+<tr>
+<td>5</td>
+<td>OBJ_ENCODING_ZIPLIST</td>
+<td>压缩列表</td>
+</tr>
+<tr>
+<td>6</td>
+<td>OBJ_ENCODING_INTSET</td>
+<td>整数集合</td>
+</tr>
+<tr>
+<td>7</td>
+<td>OBJ_ENCODING_SKIPLIST</td>
+<td>跳表</td>
+</tr>
+<tr>
+<td>8</td>
+<td>OBJ_ENCODING_EMBSTR</td>
+<td>embstr的动态字符串</td>
+</tr>
+<tr>
+<td>9</td>
+<td>OBJ_ENCODING_QUICKLIST</td>
+<td>快速列表</td>
+</tr>
+<tr>
+<td>10</td>
+<td>OBJ_ENCODING_STREAM</td>
+<td>Stream流</td>
+</tr>
+</tbody></table>
+<p>五种数据结构</p>
+<p>Redis中会根据存储的数据类型不同，选择不同的编码方式。每种数据类型的使用的编码方式如下：</p>
+<table>
+<thead>
+<tr>
+<th><strong>数据类型</strong></th>
+<th><strong>编码方式</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>OBJ_STRING</td>
+<td>int、embstr、raw</td>
+</tr>
+<tr>
+<td>OBJ_LIST</td>
+<td>LinkedList和ZipList(3.2以前) -&gt; QuickList（3.2以后）</td>
+</tr>
+<tr>
+<td>OBJ_SET</td>
+<td>intset、HT</td>
+</tr>
+<tr>
+<td>OBJ_ZSET</td>
+<td>ZipList、HT、SkipList</td>
+</tr>
+<tr>
+<td>OBJ_HASH</td>
+<td>ZipList、HT</td>
+</tr>
+</tbody></table>
+<img src="/2024/10/17/DatabaseSystem/Redis/4.%E5%BA%95%E5%B1%82%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/image-20240703000214067.png" class="" title="image-20240703000214067">
+
+
+
+
+
+<h4 id="string"><a href="#string" class="headerlink" title="string"></a>string</h4><p>底层数据类型包含int、embstr、raw，embstr在小于等于44字节时使用连续内存，占用更小</p>
+<h5 id="OBJ-ENCODING-INT"><a href="#OBJ-ENCODING-INT" class="headerlink" title="OBJ_ENCODING_INT"></a>OBJ_ENCODING_INT</h5><img src="/2024/10/17/DatabaseSystem/Redis/4.%E5%BA%95%E5%B1%82%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/image-20240704202852578.png" class="" title="image-20240704202852578">
+
+<p>int 编码方式直接使用 long 类型存储数据。</p>
+<h5 id="OBJ-ENCODING-EMBSTR"><a href="#OBJ-ENCODING-EMBSTR" class="headerlink" title="OBJ_ENCODING_EMBSTR"></a>OBJ_ENCODING_EMBSTR</h5><img src="/2024/10/17/DatabaseSystem/Redis/4.%E5%BA%95%E5%B1%82%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/image-20240704202914122.png" class="" title="image-20240704202914122">
+
+<p>embstr 编码方式使用 SDS 存储数据，head 与 SDS 内存连续，一次内存分配调用。</p>
+<h5 id="OBJ-ENCODING-RAW"><a href="#OBJ-ENCODING-RAW" class="headerlink" title="OBJ_ENCODING_RAW"></a>OBJ_ENCODING_RAW</h5><img src="/2024/10/17/DatabaseSystem/Redis/4.%E5%BA%95%E5%B1%82%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/image-20240704203011507.png" class="" title="image-20240704203011507">
+
+<p>embstr 编码方式使用 SDS 存储数据，head 与 SDS 内存不连续，两次内存分配调用。</p>
+<h5 id="编码选择"><a href="#编码选择" class="headerlink" title="编码选择"></a>编码选择</h5><ol>
+<li>如果存储的字符串是整数值，并且大小在LONG_MAX范围内，则会采用INT编码：直接将数据保存在RedisObject的ptr指针位置（刚好8字节），不再需要SDS了。</li>
+<li>存储的SDS长度小于44字节，则会采用EMBSTR编码，此时object head与SDS是一段连续空间。申请内存时只需要调用一次内存分配函数，效率更高。</li>
+<li>其基本编码方式是RAW，基于简单动态字符串（SDS）实现，存储上限为512mb。</li>
+</ol>
+<h5 id="编码转换"><a href="#编码转换" class="headerlink" title="编码转换"></a>编码转换</h5><p>自增操作</p>
+<ul>
+<li>若为 OBJ_ENCODING_INT 编码，直接进行自增操作</li>
+<li>若为 OBJ_ENCODING_EMBSTR 或 OBJ_ENCODING_RAW 编码，尝试将 SDS 转为 long 再进行操作</li>
+</ul>
+<p>位操作，setbit</p>
+<ul>
+<li>若为 OBJ_ENCODING_EMBSTR 或 OBJ_ENCODING_RAW 编码，则直接进行操作</li>
+<li>若为 OBJ_ENCODING_INT，尝试将 long 转为 SDS 再进行操作。</li>
+</ul>
+<h4 id="list"><a href="#list" class="headerlink" title="list"></a>list</h4><p>OBJ_ENCODING_QUICKLIST</p>
+<img src="/2024/10/17/DatabaseSystem/Redis/4.%E5%BA%95%E5%B1%82%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/image-20240704205506137.png" class="" title="image-20240704205506137">
+
+<ul>
+<li>LinkedList ：普通链表，可以从双端访问，内存占用较高，内存碎片较多</li>
+<li>ZipList ：压缩列表，可以从双端访问，内存占用低，存储上限低</li>
+<li>QuickList：LinkedList + ZipList，可以从双端访问，内存占用较低，包含多个ZipList，存储上限高</li>
+</ul>
+<p>Redis的List结构类似一个双端链表，可以从首、尾操作列表中的元素：</p>
+<p>在3.2版本之前，Redis采用ZipList和LinkedList来实现List，当元素数量小于512并且元素大小小于64字节时采用ZipList编码，超过则采用LinkedList编码。</p>
+<p>在3.2版本之后，Redis统一采用QuickList来实现List：</p>
+<pre><code class="c">void pushGenericCommand(client *c, int where, int xx) &#123;
+    int j;
+    // 尝试找到KEY对应的list
+    robj *lobj = lookupKeyWrite(c-&gt;db, c-&gt;argv[1]);
+    // 检查类型是否正确
+    if (checkType(c,lobj,OBJ_LIST)) return;
+    // 检查是否为空
+    if (!lobj) &#123;
+        if (xx) &#123;
+            addReply(c, shared.czero);
+            return;
+        &#125;
+        // 为空，则创建新的QuickList
+        lobj = createQuicklistObject();
+        quicklistSetOptions(lobj-&gt;ptr, server.list_max_ziplist_size,
+                            server.list_compress_depth);
+        dbAdd(c-&gt;db,c-&gt;argv[1],lobj);
+    &#125;
+    // 略 ...
+&#125;
+</code></pre>
+<pre><code class="c">robj *createQuicklistObject(void) &#123;
+    // 申请内存并初始化QuickList
+    quicklist *l = quicklistCreate();
+    // 创建RedisObject，type为OBJ_LIST
+    // ptr指向 QuickList
+    robj *o = createObject(OBJ_LIST,l);
+    // 设置编码为 QuickList
+    o-&gt;encoding = OBJ_ENCODING_QUICKLIST;
+    return o;
+&#125;
+</code></pre>
+<h4 id="set"><a href="#set" class="headerlink" title="set"></a>set</h4><p>Set是Redis中的集合，不一定确保元素有序，可以满足元素唯一、查询效率要求极高。</p>
+<ul>
+<li>不保证有序性</li>
+<li>保证元素唯一</li>
+<li>求交集、并集、差集</li>
+</ul>
+<h5 id="OBJ-ENCODING-INTSET"><a href="#OBJ-ENCODING-INTSET" class="headerlink" title="OBJ_ENCODING_INTSET"></a>OBJ_ENCODING_INTSET</h5><p>使用 IntSet 存储数据</p>
+<img src="/2024/10/17/DatabaseSystem/Redis/4.%E5%BA%95%E5%B1%82%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/image-20240707001600840.png" class="" title="image-20240707001600840">
+
+<h5 id="OBJ-ENCODING-HT"><a href="#OBJ-ENCODING-HT" class="headerlink" title="OBJ_ENCODING_HT"></a>OBJ_ENCODING_HT</h5><p>使用 Dict 存储数据</p>
+<img src="/2024/10/17/DatabaseSystem/Redis/4.%E5%BA%95%E5%B1%82%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/image-20240707001703645.png" class="" title="image-20240707001703645">
+
+<h5 id="编码选择-1"><a href="#编码选择-1" class="headerlink" title="编码选择"></a>编码选择</h5><ul>
+<li><p>为了查询效率和唯一性，set采用HT编码（Dict）。Dict中的key用来存储元素，value统一为null。</p>
+</li>
+<li><p>当存储的所有数据都是整数，并且元素数量不超过set-max-intset-entries时，Set会采用IntSet编码，以节省内存。set-max-intset-entries的默认值是512</p>
+<img src="/2024/10/17/DatabaseSystem/Redis/4.%E5%BA%95%E5%B1%82%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/image-20240707001116665.png" class="" title="image-20240707001116665"></li>
+</ul>
+<pre><code class="c">robj *setTypeCreate(sds value) &#123;
+    // 判断value是否是数值类型 long long 
+    if (isSdsRepresentableAsLongLong(value,NULL) == C_OK)
+        // 如果是数值类型，则采用IntSet编码
+        return createIntsetObject();
+    // 否则采用默认编码，也就是HT
+    return createSetObject();
+&#125;
+</code></pre>
+<pre><code class="c">robj *createIntsetObject(void) &#123;
+    // 初始化INTSET并申请内存空间
+    intset *is = intsetNew();
+    // 创建RedisObject
+    robj *o = createObject(OBJ_SET,is);
+    // 指定编码为INTSET
+    o-&gt;encoding = OBJ_ENCODING_INTSET;
+    return o;
+&#125;
+</code></pre>
+<pre><code class="c">robj *createSetObject(void) &#123;
+    // 初始化Dict类型，并申请内存
+    dict *d = dictCreate(&amp;setDictType,NULL);
+    // 创建RedisObject
+    robj *o = createObject(OBJ_SET,d);
+    // 设置encoding为HT
+    o-&gt;encoding = OBJ_ENCODING_HT;
+    return o;
+&#125;
+</code></pre>
+<p>OBJ_ENCODING_SKIPLIST</p>
+<h4 id="hash"><a href="#hash" class="headerlink" title="hash"></a>hash</h4><pre><code class="c">struct dict &#123;
+    dictType *type;
+    dictEntry **ht_table[2];
+    unsigned long ht_used[2];
+
+    long rehashidx; /* rehashing not in progress if rehashidx == -1 */
+
+    /* Keep small vars at end for optimal (minimal) struct padding */
+    int16_t pauserehash; /* If &gt;0 rehashing is paused (&lt;0 indicates coding error) */
+    signed char ht_size_exp[2]; /* exponent of size. (size = 1&lt;&lt;exp) */
+&#125;;
+
+
+typedef struct dictType &#123;
+    uint64_t (*hashFunction)(const void *key);
+    void *(*keyDup)(dict *d, const void *key);
+    void *(*valDup)(dict *d, const void *obj);
+    int (*keyCompare)(dict *d, const void *key1, const void *key2);
+    void (*keyDestructor)(dict *d, void *key);
+    void (*valDestructor)(dict *d, void *obj);
+    int (*expandAllowed)(size_t moreMem, double usedRatio);
+    /* Allow a dictEntry to carry extra caller-defined metadata.  The
+     * extra memory is initialized to 0 when a dictEntry is allocated. */
+    size_t (*dictEntryMetadataBytes)(dict *d);
+&#125; dictType;
+
+
+typedef struct dictEntry &#123;
+    void *key;
+    union &#123;
+        void *val;
+        uint64_t u64;
+        int64_t s64;
+        double d;
+    &#125; v;
+    struct dictEntry *next;     /* Next entry in the same hash bucket. */
+    void *metadata[];           /* An arbitrary number of bytes (starting at a
+                                 * pointer-aligned address) of size as returned
+                                 * by dictType&#39;s dictEntryMetadataBytes(). */
+&#125; dictEntry;
+</code></pre>
+<h5 id="OBJ-ENCODING-ZIPLIST"><a href="#OBJ-ENCODING-ZIPLIST" class="headerlink" title="OBJ_ENCODING_ZIPLIST"></a>OBJ_ENCODING_ZIPLIST</h5><img src="/2024/10/17/DatabaseSystem/Redis/4.%E5%BA%95%E5%B1%82%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/image-20240707003425463.png" class="" title="image-20240707003425463">
+
+<h5 id="OBJ-ENCODING-HT-1"><a href="#OBJ-ENCODING-HT-1" class="headerlink" title="OBJ_ENCODING_HT"></a>OBJ_ENCODING_HT</h5><img src="/2024/10/17/DatabaseSystem/Redis/4.%E5%BA%95%E5%B1%82%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/image-20240707003524807.png" class="" title="image-20240707003524807">
+
+
+
+<p>编码适用</p>
+<ol>
+<li><p>Hash结构默认采用ZipList编码，用以节省内存。 ZipList中相邻的两个entry 分别保存field和value</p>
+</li>
+<li><p>当数据量较大时，Hash结构会转为HT编码，也就是Dict，触发条件有两个：</p>
+<ul>
+<li><p>ZipList中的元素数量超过了hash-max-ziplist-entries（默认512）</p>
+</li>
+<li><p>ZipList中的任意entry大小超过了hash-max-ziplist-value（默认64字节）</p>
+<img src="/2024/10/17/DatabaseSystem/Redis/4.%E5%BA%95%E5%B1%82%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/image-20240707004016470.png" class="" title="image-20240707004016470"></li>
+</ul>
+</li>
+</ol>
+<pre><code class="c">void hsetCommand(client *c) &#123;// hset user1 name Jack age 21
+    int i, created = 0;
+    robj *o; // 略 ...    // 判断hash的key是否存在，不存在则创建一个新的，默认采用ZipList编码
+    if ((o = hashTypeLookupWriteOrCreate(c,c-&gt;argv[1])) == NULL) return;
+    // 判断是否需要把ZipList转为Dict
+    hashTypeTryConversion(o,c-&gt;argv,2,c-&gt;argc-1);
+    // 循环遍历每一对field和value，并执行hset命令
+    for (i = 2; i &lt; c-&gt;argc; i += 2)
+        created += !hashTypeSet(o,c-&gt;argv[i]-&gt;ptr,c-&gt;argv[i+1]-&gt;ptr,HASH_SET_COPY);    // 略 ...
+&#125;
+</code></pre>
+<pre><code class="c">robj *hashTypeLookupWriteOrCreate(client *c, robj *key) &#123;
+    // 查找key
+    robj *o = lookupKeyWrite(c-&gt;db,key);
+    if (checkType(c,o,OBJ_HASH)) return NULL;
+    // 不存在，则创建新的
+    if (o == NULL) &#123;
+        o = createHashObject();
+        dbAdd(c-&gt;db,key,o);
+    &#125;
+    return o;
+&#125;
+</code></pre>
+<pre><code class="c">robj *createHashObject(void) &#123;
+    // 默认采用ZipList编码，申请ZipList内存空间
+    unsigned char *zl = ziplistNew();
+    robj *o = createObject(OBJ_HASH, zl);
+    // 设置编码
+    o-&gt;encoding = OBJ_ENCODING_ZIPLIST;
+    return o;
+&#125;
+</code></pre>
+<pre><code class="c">void hashTypeTryConversion(robj *o, robj **argv, int start, int end) &#123;
+    int i;
+    size_t sum = 0;
+    // 本来就不是ZipList编码，什么都不用做了
+    if (o-&gt;encoding != OBJ_ENCODING_ZIPLIST) return;
+    // 依次遍历命令中的field、value参数
+    for (i = start; i &lt;= end; i++) &#123;
+        if (!sdsEncodedObject(argv[i]))
+            continue;
+        size_t len = sdslen(argv[i]-&gt;ptr);
+        // 如果field或value超过hash_max_ziplist_value，则转为HT
+        if (len &gt; server.hash_max_ziplist_value) &#123;
+            hashTypeConvert(o, OBJ_ENCODING_HT);
+            return;
+        &#125;
+        sum += len;
+    &#125;// ziplist大小超过1G，也转为HT
+    if (!ziplistSafeToAdd(o-&gt;ptr, sum))
+        hashTypeConvert(o, OBJ_ENCODING_HT);
+&#125;
+</code></pre>
+<pre><code class="c">int hashTypeSet(robj *o, sds field, sds value, int flags) &#123;
+    int update = 0;
+    // 判断是否为ZipList编码
+    if (o-&gt;encoding == OBJ_ENCODING_ZIPLIST) &#123;
+        unsigned char *zl, *fptr, *vptr;
+        zl = o-&gt;ptr;
+        // 查询head指针
+        fptr = ziplistIndex(zl, ZIPLIST_HEAD);
+        if (fptr != NULL) &#123; // head不为空，说明ZipList不为空，开始查找key
+            fptr = ziplistFind(zl, fptr, (unsigned char*)field, sdslen(field), 1);
+            if (fptr != NULL) &#123;// 判断是否存在，如果已经存在则更新
+                update = 1;
+                zl = ziplistReplace(zl, vptr, (unsigned char*)value,
+                        sdslen(value));
+            &#125;
+        &#125;
+        // 不存在，则直接push
+        if (!update) &#123; // 依次push新的field和value到ZipList的尾部
+            zl = ziplistPush(zl, (unsigned char*)field, sdslen(field),
+                    ZIPLIST_TAIL);
+            zl = ziplistPush(zl, (unsigned char*)value, sdslen(value),
+                    ZIPLIST_TAIL);
+        &#125;
+        o-&gt;ptr = zl;
+        /* 插入了新元素，检查list长度是否超出，超出则转为HT */
+        if (hashTypeLength(o) &gt; server.hash_max_ziplist_entries)
+            hashTypeConvert(o, OBJ_ENCODING_HT);
+    &#125; else if (o-&gt;encoding == OBJ_ENCODING_HT) &#123;
+        // HT编码，直接插入或覆盖
+    &#125; else &#123;
+        serverPanic(&quot;Unknown hash encoding&quot;);
+    &#125;
+    return update;
+&#125;
+</code></pre>
+<p>负载因子</p>
+<pre><code class="c">/* Expand the hash table if needed */
+static int _dictExpandIfNeeded(dict *d)
+&#123;
+    /* Incremental rehashing already in progress. Return. */
+    if (dictIsRehashing(d)) return DICT_OK;
+
+    /* If the hash table is empty expand it to the initial size. */
+    if (DICTHT_SIZE(d-&gt;ht_size_exp[0]) == 0) return dictExpand(d, DICT_HT_INITIAL_SIZE);
+
+    /* If we reached the 1:1 ratio, and we are allowed to resize the hash
+     * table (global setting) or we should avoid it but the ratio between
+     * elements/buckets is over the &quot;safe&quot; threshold, we resize doubling
+     * the number of buckets. */
+    if (//哈希因子大于1
+        d-&gt;ht_used[0] &gt;= DICTHT_SIZE(d-&gt;ht_size_exp[0]) &amp;&amp; 
+        //可以resize或者哈希因子大于强制resize阈值
+        (dict_can_resize || d-&gt;ht_used[0]/ DICTHT_SIZE(d-&gt;ht_size_exp[0]) &gt; dict_force_resize_ratio) &amp;&amp;
+        //dictType允许扩容
+        dictTypeExpandAllowed(d)
+        ) &#123;
+        return dictExpand(d, d-&gt;ht_used[0] + 1);
+    &#125;
+    return DICT_OK;
+&#125;
+
+
+/* Resize the table to the minimal size that contains all the elements,
+ * but with the invariant of a USED/BUCKETS ratio near to &lt;= 1 */
+//第一个大于等于2^n
+int dictResize(dict *d)
+&#123;
+    unsigned long minimal;
+
+    if (!dict_can_resize || dictIsRehashing(d)) return DICT_ERR;
+    minimal = d-&gt;ht_used[0];
+    if (minimal &lt; DICT_HT_INITIAL_SIZE)
+        minimal = DICT_HT_INITIAL_SIZE;
+    return dictExpand(d, minimal);
+&#125;
+
+
+/* Expand or create the hash table,
+ * when malloc_failed is non-NULL, it&#39;ll avoid panic if malloc fails (in which case it&#39;ll be set to 1).
+ * Returns DICT_OK if expand was performed, and DICT_ERR if skipped. */
+int _dictExpand(dict *d, unsigned long size, int* malloc_failed)
+&#123;
+    if (malloc_failed) *malloc_failed = 0;
+
+    /* the size is invalid if it is smaller than the number of
+     * elements already inside the hash table */
+    if (dictIsRehashing(d) || d-&gt;ht_used[0] &gt; size)
+        return DICT_ERR;
+
+    /* the new hash table */
+    dictEntry **new_ht_table;
+    unsigned long new_ht_used;
+    signed char new_ht_size_exp = _dictNextExp(size);
+
+    /* Detect overflows */
+    size_t newsize = 1ul&lt;&lt;new_ht_size_exp;
+    if (newsize &lt; size || newsize * sizeof(dictEntry*) &lt; newsize)
+        return DICT_ERR;
+
+    /* Rehashing to the same table size is not useful. */
+    if (new_ht_size_exp == d-&gt;ht_size_exp[0]) return DICT_ERR;
+
+    /* Allocate the new hash table and initialize all pointers to NULL */
+    if (malloc_failed) &#123;
+        new_ht_table = ztrycalloc(newsize*sizeof(dictEntry*));
+        *malloc_failed = new_ht_table == NULL;
+        if (*malloc_failed)
+            return DICT_ERR;
+    &#125; else
+        new_ht_table = zcalloc(newsize*sizeof(dictEntry*));
+
+    new_ht_used = 0;
+
+    /* Is this the first initialization? If so it&#39;s not really a rehashing
+     * we just set the first hash table so that it can accept keys. */
+    if (d-&gt;ht_table[0] == NULL) &#123;
+        d-&gt;ht_size_exp[0] = new_ht_size_exp;
+        d-&gt;ht_used[0] = new_ht_used;
+        d-&gt;ht_table[0] = new_ht_table;
+        return DICT_OK;
+    &#125;
+
+    /* Prepare a second hash table for incremental rehashing */
+    d-&gt;ht_size_exp[1] = new_ht_size_exp;
+    d-&gt;ht_used[1] = new_ht_used;
+    d-&gt;ht_table[1] = new_ht_table;
+    d-&gt;rehashidx = 0;
+    return DICT_OK;
+&#125;
+
+/* Performs N steps of incremental rehashing. Returns 1 if there are still
+ * keys to move from the old to the new hash table, otherwise 0 is returned.
+ *
+ * Note that a rehashing step consists in moving a bucket (that may have more
+ * than one key as we use chaining) from the old to the new hash table, however
+ * since part of the hash table may be composed of empty spaces, it is not
+ * guaranteed that this function will rehash even a single bucket, since it
+ * will visit at max N*10 empty buckets in total, otherwise the amount of
+ * work it does would be unbound and the function may block for a long time. */
+int dictRehash(dict *d, int n) &#123;
+    int empty_visits = n*10; /* Max number of empty buckets to visit. */
+    if (!dictIsRehashing(d)) return 0;
+
+    while(n-- &amp;&amp; d-&gt;ht_used[0] != 0) &#123;
+        dictEntry *de, *nextde;
+
+        /* Note that rehashidx can&#39;t overflow as we are sure there are more
+         * elements because ht[0].used != 0 */
+        assert(DICTHT_SIZE(d-&gt;ht_size_exp[0]) &gt; (unsigned long)d-&gt;rehashidx);
+        while(d-&gt;ht_table[0][d-&gt;rehashidx] == NULL) &#123;
+            d-&gt;rehashidx++;
+            if (--empty_visits == 0) return 1;
+        &#125;
+        de = d-&gt;ht_table[0][d-&gt;rehashidx];
+        /* Move all the keys in this bucket from the old to the new hash HT */
+        while(de) &#123;
+            uint64_t h;
+
+            nextde = de-&gt;next;
+            /* Get the index in the new hash table */
+            h = dictHashKey(d, de-&gt;key) &amp; DICTHT_SIZE_MASK(d-&gt;ht_size_exp[1]);
+            de-&gt;next = d-&gt;ht_table[1][h];
+            d-&gt;ht_table[1][h] = de;
+            d-&gt;ht_used[0]--;
+            d-&gt;ht_used[1]++;
+            de = nextde;
+        &#125;
+        d-&gt;ht_table[0][d-&gt;rehashidx] = NULL;
+        d-&gt;rehashidx++;
+    &#125;
+
+    /* Check if we already rehashed the whole table... */
+    if (d-&gt;ht_used[0] == 0) &#123;
+        zfree(d-&gt;ht_table[0]);
+        /* Copy the new ht onto the old one */
+        d-&gt;ht_table[0] = d-&gt;ht_table[1];
+        d-&gt;ht_used[0] = d-&gt;ht_used[1];
+        d-&gt;ht_size_exp[0] = d-&gt;ht_size_exp[1];
+        _dictReset(d, 1);
+        d-&gt;rehashidx = -1;
+        return 0;
+    &#125;
+
+    /* More to rehash... */
+    return 1;
+&#125;
+</code></pre>
+<h3 id="ZSET"><a href="#ZSET" class="headerlink" title="ZSET"></a>ZSET</h3><p>ZSet也就是SortedSet，其中每一个元素都需要指定一个score值和member值：</p>
+<ul>
+<li>可以根据score值排序后</li>
+<li>member必须唯一</li>
+<li>可以根据member查询分数</li>
+</ul>
+<p>两份数据，一份Dict、一份SkipList</p>
+<p>因此，zset底层数据结构必须满足键值存储、键必须唯一、可排序这几个需求。之前学习的哪种编码结构可以满足？</p>
+<ul>
+<li>SkipList：可以排序，并且可以同时存储score和ele值（member）</li>
+<li>HT（Dict）：可以键值存储，并且可以根据key找value</li>
+</ul>
+<pre><code class="c">// zset结构
+typedef struct zset &#123;
+    // Dict指针
+    dict *dict;
+    // SkipList指针
+    zskiplist *zsl;
+&#125; zset;
+
+robj *createZsetObject(void) &#123;
+    zset *zs = zmalloc(sizeof(*zs));
+    robj *o;
+    // 创建Dict
+    zs-&gt;dict = dictCreate(&amp;zsetDictType,NULL);
+    // 创建SkipList
+    zs-&gt;zsl = zslCreate(); 
+    o = createObject(OBJ_ZSET,zs);
+    o-&gt;encoding = OBJ_ENCODING_SKIPLIST;
+    return o;
+&#125;
+</code></pre>
+<pre><code class="c">/* ZSETs use a specialized version of Skiplists */
+typedef struct zskiplistNode &#123;
+    sds ele;
+    double score;
+    struct zskiplistNode *backward;
+    struct zskiplistLevel &#123;
+        struct zskiplistNode *forward;
+        unsigned long span;
+    &#125; level[];
+&#125; zskiplistNode;
+
+typedef struct zskiplist &#123;
+    struct zskiplistNode *header, *tail;
+    unsigned long length;
+    int level;
+&#125; zskiplist;
+
+typedef struct zset &#123;
+    dict *dict;
+    zskiplist *zsl;
+&#125; zset;
+</code></pre>
+<img src="/2024/10/17/DatabaseSystem/Redis/4.%E5%BA%95%E5%B1%82%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/1653992172526.png" class="" width="1653992172526">
+
+
+
+
+
+
+
+<p>当元素数量不多时，HT和SkipList的优势不明显，而且更耗内存。因此zset还会采用ZipList结构来节省内存，不过需要同时满足两个条件：</p>
+<ul>
+<li>元素数量小于zset_max_ziplist_entries，默认值128</li>
+<li>每个元素都小于zset_max_ziplist_value字节，默认值64</li>
+</ul>
+<p>ziplist本身没有排序功能，而且没有键值对的概念，因此需要有zset通过编码实现：</p>
+<ul>
+<li>ZipList是连续内存，因此score和element是紧挨在一起的两个entry， element在前，score在后</li>
+<li>score越小越接近队首，score越大越接近队尾，按照score值升序排列</li>
+</ul>
+<pre><code class="c">// zadd添加元素时，先根据key找到zset，不存在则创建新的zset
+zobj = lookupKeyWrite(c-&gt;db,key);
+if (checkType(c,zobj,OBJ_ZSET)) goto cleanup;
+// 判断是否存在
+if (zobj == NULL) &#123; // zset不存在
+    if (server.zset_max_ziplist_entries == 0 ||
+        server.zset_max_ziplist_value &lt; sdslen(c-&gt;argv[scoreidx+1]-&gt;ptr))
+    &#123; // zset_max_ziplist_entries设置为0就是禁用了ZipList，
+        // 或者value大小超过了zset_max_ziplist_value，采用HT + SkipList
+        zobj = createZsetObject();
+    &#125; else &#123; // 否则，采用 ZipList
+        zobj = createZsetZiplistObject();
+    &#125;
+    dbAdd(c-&gt;db,key,zobj); 
+&#125;
+// ....
+zsetAdd(zobj, score, ele, flags, &amp;retflags, &amp;newscore);
+</code></pre>
+<pre><code class="c">robj *createZsetObject(void) &#123;
+    // 申请内存
+    zset *zs = zmalloc(sizeof(*zs));
+    robj *o;
+    // 创建Dict
+    zs-&gt;dict = dictCreate(&amp;zsetDictType,NULL);
+    // 创建SkipList
+    zs-&gt;zsl = zslCreate();
+    o = createObject(OBJ_ZSET,zs);
+    o-&gt;encoding = OBJ_ENCODING_SKIPLIST;
+    return o;
+&#125;
+</code></pre>
+<pre><code class="c">robj *createZsetZiplistObject(void) &#123;
+    // 创建ZipList
+    unsigned char *zl = ziplistNew();
+    robj *o = createObject(OBJ_ZSET,zl);
+    o-&gt;encoding = OBJ_ENCODING_ZIPLIST;
+    return o;
+&#125;
+</code></pre>
+<pre><code class="c">int zsetAdd(robj *zobj, double score, sds ele, int in_flags, int *out_flags, double *newscore) &#123;
+    /* 判断编码方式*/
+    if (zobj-&gt;encoding == OBJ_ENCODING_ZIPLIST) &#123;// 是ZipList编码
+        unsigned char *eptr;
+        // 判断当前元素是否已经存在，已经存在则更新score即可        if ((eptr = zzlFind(zobj-&gt;ptr,ele,&amp;curscore)) != NULL) &#123;
+            //...略
+            return 1;
+        &#125; else if (!xx) &#123;
+            // 元素不存在，需要新增，则判断ziplist长度有没有超、元素的大小有没有超
+            if (zzlLength(zobj-&gt;ptr)+1 &gt; server.zset_max_ziplist_entries
+         || sdslen(ele) &gt; server.zset_max_ziplist_value 
+         || !ziplistSafeToAdd(zobj-&gt;ptr, sdslen(ele)))
+            &#123; // 如果超出，则需要转为SkipList编码
+                zsetConvert(zobj,OBJ_ENCODING_SKIPLIST);
+            &#125; else &#123;
+                zobj-&gt;ptr = zzlInsert(zobj-&gt;ptr,ele,score);
+                if (newscore) *newscore = score;
+                *out_flags |= ZADD_OUT_ADDED;
+                return 1;
+            &#125;
+        &#125; else &#123;
+            *out_flags |= ZADD_OUT_NOP;
+            return 1;
+        &#125;
+    &#125;    // 本身就是SKIPLIST编码，无需转换
+    if (zobj-&gt;encoding == OBJ_ENCODING_SKIPLIST) &#123;
+       // ...略
+    &#125; else &#123;
+        serverPanic(&quot;Unknown sorted set encoding&quot;);
+    &#125;
+    return 0; /* Never reached. */
+&#125;
+</code></pre>
+<p>OBJ_ENCODING_ZIPLIST</p>
+<p>OBJ_ENCODING_SKIPLIST</p>
+<p>OBJ_ENCODING_HT</p>
+<h3 id="HyperLogLog"><a href="#HyperLogLog" class="headerlink" title="HyperLogLog"></a>HyperLogLog</h3><p><a target="_blank" rel="noopener" href="https://juejin.cn/post/6844903785744056333">https://juejin.cn/post/6844903785744056333</a></p>
+<p>HyperLogLog用于海量数据的基数统计。基于概率估计，有一定误差。</p>
+<p>投硬币，根据概率，出现正面的概率为$\frac{1}{2}$：</p>
+<ul>
+<li>当投的次数足够多时，出现正面和反面的比例越接近1:1</li>
+<li>假设投k次硬币直到出现第一次正面算作一轮，那么根据概率</li>
+</ul>
+<p>桶共计$2^{14}$个，每个桶占用6bit，共计$2^{10}<em>8</em>12b&#x3D;12kb$</p>
+<p>bit_sequence_64 &#x3D; hash(value)</p>
+<p>64bit，前14位用于区分桶，后50位用于进行统计</p>
+<p>50位中从低位到高位，0表示反面，1表示正面，r为第一次出现1的位数</p>
+<p>r会被存储在对应桶中，$2^6&gt;50$，可以存储所有情况<br>$$<br>DV_{LogLog}&#x3D;constant<em>m</em>2^{avg(r)}<br>$$</p>
+<p>$$<br>DV_{HyperLogLog}&#x3D;constant<em>m</em>2^{avg(r)}<br>$$</p>
+<p><a target="_blank" rel="noopener" href="http://content.research.neustar.biz/blog/hll.html">http://content.research.neustar.biz/blog/hll.html</a></p>
+<p><a target="_blank" rel="noopener" href="https://juejin.cn/post/6844903785744056333">https://juejin.cn/post/6844903785744056333</a></p>
+<h3 id="二进制安全"><a href="#二进制安全" class="headerlink" title="二进制安全"></a>二进制安全</h3><p>通俗的讲，C语言中，用“0”表示字符串的结束，如果字符串中本身就有“0”字符，那么这个字符串就会被截断，即非二进制安全；若通过某种机制，保证读写字符串时不损害其内容，则是二进制安全。</p>
+<p>C语言中非二进制安全</p>
+<pre><code>main()&#123;  
+    char ab[] = &quot;Hello&quot;;  
+    char ac[] = &quot;Hello\0Hello&quot;;  
+    /*返回0, 由于是非二进制安全，误判为相等 */
+    strcmp(ab, ac); 
+ &#125;
+</code></pre>
+<p>而redis除了要处理c语言字符串之外，还需要处理redis的服务器协议等等。所以，redis实现的sds（简单动态字符串），是二进制安全的。</p>
+<p>Redis3.2之前</p>
+<pre><code class="c">typedef char *sds;    
+  
+struct sdshdr &#123;  
+    // buf 已占用长度  
+    int len;  
+    // buf 剩余可用长度  
+    int free;  
+    // 实际保存字符串数据的地方  
+    char buf[];  
+&#125;;  
+</code></pre>
+<p><a target="_blank" rel="noopener" href="https://segmentfault.com/a/1190000023130486">https://segmentfault.com/a/1190000023130486</a></p>
+
+</div>
+
+<!-- post-guide -->
+
+    <div class="post-guide">
+        <div class="item left">
+            
+              <a href="/2024/10/17/DatabaseSystem/Redis/8.%E7%BD%91%E7%BB%9C%E6%A8%A1%E5%9E%8B/">
+                  <i class="fa fa-angle-left" aria-hidden="true"></i>
+                  8.网络模型
+              </a>
+            
+        </div>
+        <div class="item right">
+            
+              <a href="/2024/10/07/WebDevelopment/PythonWeb/Django/">
+                Django
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </a>
+            
+        </div>
+    </div>
+
+
+<!-- comment - giscus -->
+
+
+<!-- comment - valine -->
+
+
+<script>
+	
+	
+</script>
+	</div>
+	<div id="footer">
+	<p>
+	©<span id="footerYear-start"></span>-<span id="footerYear-end"></span>
+
+	
+	    <a href="/">予早</a>
+	
+	
+	
+	<br>
+	Theme <a href="//github.com/wujun234/hexo-theme-tree" target="_blank">Tree</a>
+	by <a href="//wujun.me" target="_blank">Wu Jun</a>
+	Powered by <a href="//hexo.io" target="_blank">Hexo</a>
+	</p>
+</div>
+
+
+<script type="text/javascript">
+	document.getElementById('footerYear-start').innerHTML = new Date().getFullYear() + '';
+</script>
+
+<script type="text/javascript">
+	document.getElementById('footerYear-end').innerHTML = new Date().getFullYear() + '';
+</script>
+
+	<button id="totop-toggle" class="toggle"><i class="fa fa-angle-double-up" aria-hidden="true"></i></button>
+</body>
+</html>
