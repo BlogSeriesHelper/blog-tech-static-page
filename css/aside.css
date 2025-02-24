@@ -1,0 +1,134 @@
+/* 
+侧边栏CSS
+*/
+
+
+
+/* 侧边栏搜索框 */
+aside input {
+    width: 290px;
+    height: 50px;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    left: 0;
+    font-size: 14px;
+    background: #f7f9f9;
+    text-indent: 20px;
+    outline: none;
+    color: #000000;
+    position: absolute;
+}
+
+
+
+/* 搜索图标 */
+aside #search #search-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #000000;
+    font-size: 20px;
+    width: 40px;
+    height: 50px;
+    background: #f7f9f9;
+    text-align: center;
+    line-height: 2.5;
+    text-decoration: none
+}
+
+aside #search #search-icon:hover {
+    cursor: pointer;
+    color: #0c3d53;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+}
+
+/* 滚动条 */
+aside {
+    overflow-y: auto;
+}
+
+/* 树目录位置 */
+aside #tree {
+    padding-top: 55px
+}
+
+/* 树目录 */
+aside ul {
+    padding: 0px 5px 5px 20px;
+}
+
+aside ul li {
+    list-style: none;
+    line-height: 25px;
+}
+
+aside ul li a {
+    color: #bdbcbc;
+    font-size: 14px;
+    text-decoration: none
+}
+
+aside ul li a:hover {
+    color: #000000;
+    border-bottom: 1px solid #000000;
+    cursor: pointer;
+}
+
+aside #tree .active a,
+aside #tree .active a:hover {
+    color: #000000;
+    border-bottom: 1px solid #000000;
+}
+
+aside #tree i.fa {
+    padding-right: 5px;
+}
+
+/* #################### 侧边栏 #################### */
+
+
+/* #################### 文章索引 #################### */
+
+
+aside #toc {
+    padding-top: 55px;
+    display: none;
+}
+
+aside #toc a.read {
+    color: #000000;
+    border-bottom: 0;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+aside #toc a {
+    color: #bdbcbc;
+    border-bottom: 0;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+
+aside #toc a:hover {
+    color: #000000;
+    /* padding-left: 20px; 会实现鼠标悬浮时a标签向右平移的效果 */
+    /* padding-left: 20px; */
+    transition: 0.1s;
+    -webkit-transition: 0.1s;
+    -moz-transition: 0.1s;
+    -ms-transition: 0.1s;
+    -o-transition: 0.1s;
+}
+
+/* #################### 文章索引 #################### */
