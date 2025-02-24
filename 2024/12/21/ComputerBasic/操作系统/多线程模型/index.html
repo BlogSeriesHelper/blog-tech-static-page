@@ -1,0 +1,3329 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <!-- 引入主 css 文件 -->
+    <!-- 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ -->
+    
+<link rel="stylesheet" href="/css/main.css">
+
+	
+<link rel="stylesheet" href="/css/aside.css">
+
+	
+<link rel="stylesheet" href="/css/nav.css">
+
+	
+<link rel="stylesheet" href="/css/post.css">
+
+
+    <title>多线程模型 | 予早 Tech</title>
+<meta name="generator" content="Hexo 7.3.0"></head>
+<body>
+    <div id="main">
+        <!-- 侧边栏 -->
+        <aside id="#aside">
+            <!-- 搜索栏 -->
+<div id="search">
+    <input class="search-input" type="text" placeholder="search">
+    <i id="search-icon" class="fa fa-bars">
+</div>
+
+<!-- 侧边目录栏 -->
+<div id="tree">
+    
+
+    
+                    <ul>
+                        <li class="directory">
+                            <a href="#" class="directory">
+                                <i class="fa fa-folder"></i>
+                                BusinessSystem
+                            </a>
+                            
+                    <ul>
+                        <li class="directory">
+                            <a href="#" class="directory">
+                                <i class="fa fa-folder"></i>
+                                电商系统
+                            </a>
+                            
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/BusinessSystem/电商系统/Untitled/">
+                                <i class="fa fa-file"></i>
+                                Untitled
+                            </a>
+                        </li>
+                    </ul>
+    
+                        </li>
+
+                    </ul>
+    
+                    <ul>
+                        <li class="directory">
+                            <a href="#" class="directory">
+                                <i class="fa fa-folder"></i>
+                                统一消息推送
+                            </a>
+                            
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/BusinessSystem/统一消息推送/短信消息模板/">
+                                <i class="fa fa-file"></i>
+                                短信消息模板
+                            </a>
+                        </li>
+                    </ul>
+    
+                        </li>
+
+                    </ul>
+    
+                        </li>
+
+                    </ul>
+    
+                    <ul>
+                        <li class="directory">
+                            <a href="#" class="directory">
+                                <i class="fa fa-folder"></i>
+                                CloudPlatform
+                            </a>
+                            
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/CloudPlatform/OSS/">
+                                <i class="fa fa-file"></i>
+                                OSS
+                            </a>
+                        </li>
+                    </ul>
+    
+                        </li>
+
+                    </ul>
+    
+                    <ul>
+                        <li class="directory">
+                            <a href="#" class="directory">
+                                <i class="fa fa-folder"></i>
+                                ComputerBasic
+                            </a>
+                            
+                    <ul>
+                        <li class="directory">
+                            <a href="#" class="directory">
+                                <i class="fa fa-folder"></i>
+                                操作系统
+                            </a>
+                            
+                    <ul>
+                        <li class="file active">
+                            <a href="/2024/12/21/ComputerBasic/操作系统/多线程模型/">
+                                <i class="fa fa-file"></i>
+                                多线程模型
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/ComputerBasic/操作系统/KB、KiB/">
+                                <i class="fa fa-file"></i>
+                                KB、KiB
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/ComputerBasic/操作系统/README/">
+                                <i class="fa fa-file"></i>
+                                README
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="directory">
+                            <a href="#" class="directory">
+                                <i class="fa fa-folder"></i>
+                                UNIX-likeOS
+                            </a>
+                            
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/ComputerBasic/操作系统/UNIX-likeOS/磁盘扩容/">
+                                <i class="fa fa-file"></i>
+                                磁盘扩容
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/ComputerBasic/操作系统/UNIX-likeOS/输入输出重定向/">
+                                <i class="fa fa-file"></i>
+                                输入输出重定向
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/ComputerBasic/操作系统/UNIX-likeOS/export/">
+                                <i class="fa fa-file"></i>
+                                export
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/ComputerBasic/操作系统/UNIX-likeOS/linux时间同步/">
+                                <i class="fa fa-file"></i>
+                                linux时间同步
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/ComputerBasic/操作系统/UNIX-likeOS/make、cmake/">
+                                <i class="fa fa-file"></i>
+                                make、cmake
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/ComputerBasic/操作系统/UNIX-likeOS/ps/">
+                                <i class="fa fa-file"></i>
+                                ps
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/ComputerBasic/操作系统/UNIX-likeOS/sed/">
+                                <i class="fa fa-file"></i>
+                                sed
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/ComputerBasic/操作系统/UNIX-likeOS/shell/">
+                                <i class="fa fa-file"></i>
+                                shell
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/ComputerBasic/操作系统/UNIX-likeOS/UID、EUID/">
+                                <i class="fa fa-file"></i>
+                                UID、EUID
+                            </a>
+                        </li>
+                    </ul>
+    
+                        </li>
+
+                    </ul>
+    
+                    <ul>
+                        <li class="directory">
+                            <a href="#" class="directory">
+                                <i class="fa fa-folder"></i>
+                                WindowsOS
+                            </a>
+                            
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/ComputerBasic/操作系统/WindowsOS/实用工具/">
+                                <i class="fa fa-file"></i>
+                                实用工具
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/ComputerBasic/操作系统/WindowsOS/PowerShell /">
+                                <i class="fa fa-file"></i>
+                                PowerShell 
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/ComputerBasic/操作系统/WindowsOS/Windows环境变量/">
+                                <i class="fa fa-file"></i>
+                                Windows环境变量
+                            </a>
+                        </li>
+                    </ul>
+    
+                        </li>
+
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/ComputerBasic/操作系统/x86、x64/">
+                                <i class="fa fa-file"></i>
+                                x86、x64
+                            </a>
+                        </li>
+                    </ul>
+    
+                        </li>
+
+                    </ul>
+    
+                    <ul>
+                        <li class="directory">
+                            <a href="#" class="directory">
+                                <i class="fa fa-folder"></i>
+                                计算机网络
+                            </a>
+                            
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/ComputerBasic/计算机网络/邮件/">
+                                <i class="fa fa-file"></i>
+                                邮件
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/ComputerBasic/计算机网络/README/">
+                                <i class="fa fa-file"></i>
+                                README
+                            </a>
+                        </li>
+                    </ul>
+    
+                        </li>
+
+                    </ul>
+    
+                    <ul>
+                        <li class="directory">
+                            <a href="#" class="directory">
+                                <i class="fa fa-folder"></i>
+                                数据结构与算法
+                            </a>
+                            
+                    <ul>
+                        <li class="directory">
+                            <a href="#" class="directory">
+                                <i class="fa fa-folder"></i>
+                                1.基础知识
+                            </a>
+                            
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/ComputerBasic/数据结构与算法/1.基础知识/基本概念/">
+                                <i class="fa fa-file"></i>
+                                基本概念
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/ComputerBasic/数据结构与算法/1.基础知识/算法要点/">
+                                <i class="fa fa-file"></i>
+                                算法要点
+                            </a>
+                        </li>
+                    </ul>
+    
+                        </li>
+
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/ComputerBasic/数据结构与算法/队列/">
+                                <i class="fa fa-file"></i>
+                                队列
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/ComputerBasic/数据结构与算法/二叉树/">
+                                <i class="fa fa-file"></i>
+                                二叉树
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="directory">
+                            <a href="#" class="directory">
+                                <i class="fa fa-folder"></i>
+                                基础数学知识
+                            </a>
+                            
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/ComputerBasic/数据结构与算法/基础数学知识/汉明距离、汉明重量/">
+                                <i class="fa fa-file"></i>
+                                汉明距离、汉明重量
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/ComputerBasic/数据结构与算法/基础数学知识/闰年/">
+                                <i class="fa fa-file"></i>
+                                闰年
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/ComputerBasic/数据结构与算法/基础数学知识/四方定理/">
+                                <i class="fa fa-file"></i>
+                                四方定理
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/ComputerBasic/数据结构与算法/基础数学知识/素数/">
+                                <i class="fa fa-file"></i>
+                                素数
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/ComputerBasic/数据结构与算法/基础数学知识/最大公约数、最小公倍数/">
+                                <i class="fa fa-file"></i>
+                                最大公约数、最小公倍数
+                            </a>
+                        </li>
+                    </ul>
+    
+                        </li>
+
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/ComputerBasic/数据结构与算法/蛮力法/">
+                                <i class="fa fa-file"></i>
+                                蛮力法
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/ComputerBasic/数据结构与算法/排序/">
+                                <i class="fa fa-file"></i>
+                                排序
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/ComputerBasic/数据结构与算法/树和森林/">
+                                <i class="fa fa-file"></i>
+                                树和森林
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/ComputerBasic/数据结构与算法/图/">
+                                <i class="fa fa-file"></i>
+                                图
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/ComputerBasic/数据结构与算法/最大公约数、最小公倍数/">
+                                <i class="fa fa-file"></i>
+                                最大公约数、最小公倍数
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/ComputerBasic/数据结构与算法/Untitled/">
+                                <i class="fa fa-file"></i>
+                                Untitled
+                            </a>
+                        </li>
+                    </ul>
+    
+                        </li>
+
+                    </ul>
+    
+                        </li>
+
+                    </ul>
+    
+                    <ul>
+                        <li class="directory">
+                            <a href="#" class="directory">
+                                <i class="fa fa-folder"></i>
+                                ComputerLanguage
+                            </a>
+                            
+                    <ul>
+                        <li class="directory">
+                            <a href="#" class="directory">
+                                <i class="fa fa-folder"></i>
+                                编程语言理论
+                            </a>
+                            
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/ComputerLanguage/编程语言理论/卫语句/">
+                                <i class="fa fa-file"></i>
+                                卫语句
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/ComputerLanguage/编程语言理论/语句/">
+                                <i class="fa fa-file"></i>
+                                语句
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/12/22/ComputerLanguage/编程语言理论/语言类型/">
+                                <i class="fa fa-file"></i>
+                                语言类型
+                            </a>
+                        </li>
+                    </ul>
+    
+                        </li>
+
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/ComputerLanguage/计算机语言中的闭包/">
+                                <i class="fa fa-file"></i>
+                                计算机语言中的闭包
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="directory">
+                            <a href="#" class="directory">
+                                <i class="fa fa-folder"></i>
+                                Go
+                            </a>
+                            
+                    <ul>
+                        <li class="directory">
+                            <a href="#" class="directory">
+                                <i class="fa fa-folder"></i>
+                                1.语言基础
+                            </a>
+                            
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/12/09/ComputerLanguage/Go/1.语言基础/1.概述/">
+                                <i class="fa fa-file"></i>
+                                1.概述
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/12/11/ComputerLanguage/Go/1.语言基础/10.函数/">
+                                <i class="fa fa-file"></i>
+                                10.函数
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/ComputerLanguage/Go/1.语言基础/11.异常/">
+                                <i class="fa fa-file"></i>
+                                11.异常
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/ComputerLanguage/Go/1.语言基础/12.元编程/">
+                                <i class="fa fa-file"></i>
+                                12.元编程
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/12/19/ComputerLanguage/Go/1.语言基础/13.源文件间结构组织/">
+                                <i class="fa fa-file"></i>
+                                13.源文件间结构组织
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/12/19/ComputerLanguage/Go/1.语言基础/14.面向对象编程/">
+                                <i class="fa fa-file"></i>
+                                14.面向对象编程
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/12/09/ComputerLanguage/Go/1.语言基础/2.历史/">
+                                <i class="fa fa-file"></i>
+                                2.历史
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/ComputerLanguage/Go/1.语言基础/3.1代码执行模式/">
+                                <i class="fa fa-file"></i>
+                                3.1代码执行模式
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/12/09/ComputerLanguage/Go/1.语言基础/3.环境/">
+                                <i class="fa fa-file"></i>
+                                3.环境
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/12/09/ComputerLanguage/Go/1.语言基础/4.标识符/">
+                                <i class="fa fa-file"></i>
+                                4.标识符
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/12/11/ComputerLanguage/Go/1.语言基础/5.常量与变量/">
+                                <i class="fa fa-file"></i>
+                                5.常量与变量
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/12/09/ComputerLanguage/Go/1.语言基础/6.数据类型/">
+                                <i class="fa fa-file"></i>
+                                6.数据类型
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/12/11/ComputerLanguage/Go/1.语言基础/7.运算符/">
+                                <i class="fa fa-file"></i>
+                                7.运算符
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/12/11/ComputerLanguage/Go/1.语言基础/8.流程控制/">
+                                <i class="fa fa-file"></i>
+                                8.流程控制
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/12/11/ComputerLanguage/Go/1.语言基础/9.注释/">
+                                <i class="fa fa-file"></i>
+                                9.注释
+                            </a>
+                        </li>
+                    </ul>
+    
+                        </li>
+
+                    </ul>
+    
+                    <ul>
+                        <li class="directory">
+                            <a href="#" class="directory">
+                                <i class="fa fa-folder"></i>
+                                2.功能基础
+                            </a>
+                            
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/12/20/ComputerLanguage/Go/2.功能基础/1.编解码/">
+                                <i class="fa fa-file"></i>
+                                1.编解码
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/12/21/ComputerLanguage/Go/2.功能基础/10.并发编程/">
+                                <i class="fa fa-file"></i>
+                                10.并发编程
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/ComputerLanguage/Go/2.功能基础/11.网络编程/">
+                                <i class="fa fa-file"></i>
+                                11.网络编程
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/12/20/ComputerLanguage/Go/2.功能基础/2.加解密/">
+                                <i class="fa fa-file"></i>
+                                2.加解密
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/ComputerLanguage/Go/2.功能基础/3.IO/">
+                                <i class="fa fa-file"></i>
+                                3.IO
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/12/20/ComputerLanguage/Go/2.功能基础/4.数学/">
+                                <i class="fa fa-file"></i>
+                                4.数学
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/ComputerLanguage/Go/2.功能基础/5.时间/">
+                                <i class="fa fa-file"></i>
+                                5.时间
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/ComputerLanguage/Go/2.功能基础/6.系统/">
+                                <i class="fa fa-file"></i>
+                                6.系统
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/12/21/ComputerLanguage/Go/2.功能基础/7.基础数据结构与算法/">
+                                <i class="fa fa-file"></i>
+                                7.基础数据结构与算法
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/12/20/ComputerLanguage/Go/2.功能基础/9.统一日志/">
+                                <i class="fa fa-file"></i>
+                                9.统一日志
+                            </a>
+                        </li>
+                    </ul>
+    
+                        </li>
+
+                    </ul>
+    
+                    <ul>
+                        <li class="directory">
+                            <a href="#" class="directory">
+                                <i class="fa fa-folder"></i>
+                                3.运行时
+                            </a>
+                            
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/ComputerLanguage/Go/3.运行时/内存管理/">
+                                <i class="fa fa-file"></i>
+                                内存管理
+                            </a>
+                        </li>
+                    </ul>
+    
+                        </li>
+
+                    </ul>
+    
+                    <ul>
+                        <li class="directory">
+                            <a href="#" class="directory">
+                                <i class="fa fa-folder"></i>
+                                4.主要规范
+                            </a>
+                            
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/ComputerLanguage/Go/4.主要规范/Untitled/">
+                                <i class="fa fa-file"></i>
+                                Untitled
+                            </a>
+                        </li>
+                    </ul>
+    
+                        </li>
+
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/ComputerLanguage/Go/README/">
+                                <i class="fa fa-file"></i>
+                                README
+                            </a>
+                        </li>
+                    </ul>
+    
+                        </li>
+
+                    </ul>
+    
+                    <ul>
+                        <li class="directory">
+                            <a href="#" class="directory">
+                                <i class="fa fa-folder"></i>
+                                Java
+                            </a>
+                            
+                    <ul>
+                        <li class="directory">
+                            <a href="#" class="directory">
+                                <i class="fa fa-folder"></i>
+                                2.功能基础
+                            </a>
+                            
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/ComputerLanguage/Java/2.功能基础/10.并发编程/">
+                                <i class="fa fa-file"></i>
+                                10.并发编程
+                            </a>
+                        </li>
+                    </ul>
+    
+                        </li>
+
+                    </ul>
+    
+                        </li>
+
+                    </ul>
+    
+                    <ul>
+                        <li class="directory">
+                            <a href="#" class="directory">
+                                <i class="fa fa-folder"></i>
+                                Python
+                            </a>
+                            
+                    <ul>
+                        <li class="directory">
+                            <a href="#" class="directory">
+                                <i class="fa fa-folder"></i>
+                                1.语言基础
+                            </a>
+                            
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/06/26/ComputerLanguage/Python/1.语言基础/1.概述/">
+                                <i class="fa fa-file"></i>
+                                1.概述
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/05/27/ComputerLanguage/Python/1.语言基础/10.注释/">
+                                <i class="fa fa-file"></i>
+                                10.注释
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/10/05/ComputerLanguage/Python/1.语言基础/11.1.内置函数/">
+                                <i class="fa fa-file"></i>
+                                11.1.内置函数
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/10/05/ComputerLanguage/Python/1.语言基础/11.函数/">
+                                <i class="fa fa-file"></i>
+                                11.函数
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/10/05/ComputerLanguage/Python/1.语言基础/12.异常/">
+                                <i class="fa fa-file"></i>
+                                12.异常
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/10/05/ComputerLanguage/Python/1.语言基础/13.元编程/">
+                                <i class="fa fa-file"></i>
+                                13.元编程
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/10/05/ComputerLanguage/Python/1.语言基础/14.源文件间结构组织/">
+                                <i class="fa fa-file"></i>
+                                14.源文件间结构组织
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/10/05/ComputerLanguage/Python/1.语言基础/15.1.内置类/">
+                                <i class="fa fa-file"></i>
+                                15.1.内置类
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/10/05/ComputerLanguage/Python/1.语言基础/15.面向对象编程/">
+                                <i class="fa fa-file"></i>
+                                15.面向对象编程
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/10/05/ComputerLanguage/Python/1.语言基础/16.函数式编程/">
+                                <i class="fa fa-file"></i>
+                                16.函数式编程
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/10/05/ComputerLanguage/Python/1.语言基础/17.流式编程/">
+                                <i class="fa fa-file"></i>
+                                17.流式编程
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/10/05/ComputerLanguage/Python/1.语言基础/18.面向切面编程/">
+                                <i class="fa fa-file"></i>
+                                18.面向切面编程
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/06/26/ComputerLanguage/Python/1.语言基础/2.历史/">
+                                <i class="fa fa-file"></i>
+                                2.历史
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/10/05/ComputerLanguage/Python/1.语言基础/3.1.代码执行模式/">
+                                <i class="fa fa-file"></i>
+                                3.1.代码执行模式
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/10/05/ComputerLanguage/Python/1.语言基础/3.2.__main__/">
+                                <i class="fa fa-file"></i>
+                                3.2.__main__
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/10/05/ComputerLanguage/Python/1.语言基础/3.环境/">
+                                <i class="fa fa-file"></i>
+                                3.环境
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/06/26/ComputerLanguage/Python/1.语言基础/4.关键字和标识符/">
+                                <i class="fa fa-file"></i>
+                                4.关键字和标识符
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/10/05/ComputerLanguage/Python/1.语言基础/5.常量与变量/">
+                                <i class="fa fa-file"></i>
+                                5.常量与变量
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/10/05/ComputerLanguage/Python/1.语言基础/6.数据类型/">
+                                <i class="fa fa-file"></i>
+                                6.数据类型
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/10/05/ComputerLanguage/Python/1.语言基础/7.运算符/">
+                                <i class="fa fa-file"></i>
+                                7.运算符
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/06/27/ComputerLanguage/Python/1.语言基础/8.表达式/">
+                                <i class="fa fa-file"></i>
+                                8.表达式
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/06/26/ComputerLanguage/Python/1.语言基础/9.流程控制/">
+                                <i class="fa fa-file"></i>
+                                9.流程控制
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/ComputerLanguage/Python/1.语言基础/上下文/">
+                                <i class="fa fa-file"></i>
+                                上下文
+                            </a>
+                        </li>
+                    </ul>
+    
+                        </li>
+
+                    </ul>
+    
+                    <ul>
+                        <li class="directory">
+                            <a href="#" class="directory">
+                                <i class="fa fa-folder"></i>
+                                2.功能基础
+                            </a>
+                            
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/ComputerLanguage/Python/2.功能基础/1.编解码/">
+                                <i class="fa fa-file"></i>
+                                1.编解码
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/10/05/ComputerLanguage/Python/2.功能基础/10.并发编程/">
+                                <i class="fa fa-file"></i>
+                                10.并发编程
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/10/05/ComputerLanguage/Python/2.功能基础/11.单元测试/">
+                                <i class="fa fa-file"></i>
+                                11.单元测试
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/10/05/ComputerLanguage/Python/2.功能基础/12.Debug/">
+                                <i class="fa fa-file"></i>
+                                12.Debug
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/10/05/ComputerLanguage/Python/2.功能基础/13.网络编程/">
+                                <i class="fa fa-file"></i>
+                                13.网络编程
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/10/05/ComputerLanguage/Python/2.功能基础/14.国际化和本地化/">
+                                <i class="fa fa-file"></i>
+                                14.国际化和本地化
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/11/30/ComputerLanguage/Python/2.功能基础/15.文档化/">
+                                <i class="fa fa-file"></i>
+                                15.文档化
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/11/30/ComputerLanguage/Python/2.功能基础/16.跨语言调用/">
+                                <i class="fa fa-file"></i>
+                                16.跨语言调用
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/ComputerLanguage/Python/2.功能基础/2.加解密/">
+                                <i class="fa fa-file"></i>
+                                2.加解密
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/10/05/ComputerLanguage/Python/2.功能基础/3.IO/">
+                                <i class="fa fa-file"></i>
+                                3.IO
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/10/05/ComputerLanguage/Python/2.功能基础/4.数学/">
+                                <i class="fa fa-file"></i>
+                                4.数学
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/10/05/ComputerLanguage/Python/2.功能基础/5.时间/">
+                                <i class="fa fa-file"></i>
+                                5.时间
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/10/05/ComputerLanguage/Python/2.功能基础/6.系统/">
+                                <i class="fa fa-file"></i>
+                                6.系统
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/10/05/ComputerLanguage/Python/2.功能基础/7.基础数据结构与算法/">
+                                <i class="fa fa-file"></i>
+                                7.基础数据结构与算法
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/10/05/ComputerLanguage/Python/2.功能基础/8.图形用户界面/">
+                                <i class="fa fa-file"></i>
+                                8.图形用户界面
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/10/05/ComputerLanguage/Python/2.功能基础/9.统一日志/">
+                                <i class="fa fa-file"></i>
+                                9.统一日志
+                            </a>
+                        </li>
+                    </ul>
+    
+                        </li>
+
+                    </ul>
+    
+                    <ul>
+                        <li class="directory">
+                            <a href="#" class="directory">
+                                <i class="fa fa-folder"></i>
+                                3.解释器
+                            </a>
+                            
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/ComputerLanguage/Python/3.解释器/见CPython3.7源码剖析/">
+                                <i class="fa fa-file"></i>
+                                见CPython3.7源码剖析
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/01/08/ComputerLanguage/Python/3.解释器/如何初步了解解释器原理/">
+                                <i class="fa fa-file"></i>
+                                如何初步了解解释器原理
+                            </a>
+                        </li>
+                    </ul>
+    
+                        </li>
+
+                    </ul>
+    
+                    <ul>
+                        <li class="directory">
+                            <a href="#" class="directory">
+                                <i class="fa fa-folder"></i>
+                                4.三方组件
+                            </a>
+                            
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/ComputerLanguage/Python/4.三方组件/0.常用功能库一览/">
+                                <i class="fa fa-file"></i>
+                                0.常用功能库一览
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/ComputerLanguage/Python/4.三方组件/1.分词、词云/">
+                                <i class="fa fa-file"></i>
+                                1.分词、词云
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/ComputerLanguage/Python/4.三方组件/2.matplotlib/">
+                                <i class="fa fa-file"></i>
+                                2.matplotlib
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/ComputerLanguage/Python/4.三方组件/3.pycurl/">
+                                <i class="fa fa-file"></i>
+                                3.pycurl
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/ComputerLanguage/Python/4.三方组件/4.celery/">
+                                <i class="fa fa-file"></i>
+                                4.celery
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/ComputerLanguage/Python/4.三方组件/5.pandas/">
+                                <i class="fa fa-file"></i>
+                                5.pandas
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/ComputerLanguage/Python/4.三方组件/6.文档/">
+                                <i class="fa fa-file"></i>
+                                6.文档
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/ComputerLanguage/Python/4.三方组件/7.pyan/">
+                                <i class="fa fa-file"></i>
+                                7.pyan
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/ComputerLanguage/Python/4.三方组件/8.tqdm/">
+                                <i class="fa fa-file"></i>
+                                8.tqdm
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/ComputerLanguage/Python/4.三方组件/README/">
+                                <i class="fa fa-file"></i>
+                                README
+                            </a>
+                        </li>
+                    </ul>
+    
+                        </li>
+
+                    </ul>
+    
+                    <ul>
+                        <li class="directory">
+                            <a href="#" class="directory">
+                                <i class="fa fa-folder"></i>
+                                4.主要规范
+                            </a>
+                            
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/ComputerLanguage/Python/4.主要规范/1.概述/">
+                                <i class="fa fa-file"></i>
+                                1.概述
+                            </a>
+                        </li>
+                    </ul>
+    
+                        </li>
+
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/11/30/ComputerLanguage/Python/README/">
+                                <i class="fa fa-file"></i>
+                                README
+                            </a>
+                        </li>
+                    </ul>
+    
+                        </li>
+
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/ComputerLanguage/README/">
+                                <i class="fa fa-file"></i>
+                                README
+                            </a>
+                        </li>
+                    </ul>
+    
+                        </li>
+
+                    </ul>
+    
+                    <ul>
+                        <li class="directory">
+                            <a href="#" class="directory">
+                                <i class="fa fa-folder"></i>
+                                CyberSecurity
+                            </a>
+                            
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/CyberSecurity/证书/">
+                                <i class="fa fa-file"></i>
+                                证书
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/CyberSecurity/Untitled/">
+                                <i class="fa fa-file"></i>
+                                Untitled
+                            </a>
+                        </li>
+                    </ul>
+    
+                        </li>
+
+                    </ul>
+    
+                    <ul>
+                        <li class="directory">
+                            <a href="#" class="directory">
+                                <i class="fa fa-folder"></i>
+                                Data
+                            </a>
+                            
+                    <ul>
+                        <li class="directory">
+                            <a href="#" class="directory">
+                                <i class="fa fa-folder"></i>
+                                文件格式
+                            </a>
+                            
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/Data/文件格式/BSON/">
+                                <i class="fa fa-file"></i>
+                                BSON
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/Data/文件格式/ini/">
+                                <i class="fa fa-file"></i>
+                                ini
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/Data/文件格式/JSON/">
+                                <i class="fa fa-file"></i>
+                                JSON
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/Data/文件格式/Markdown/">
+                                <i class="fa fa-file"></i>
+                                Markdown
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/Data/文件格式/properties/">
+                                <i class="fa fa-file"></i>
+                                properties
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/Data/文件格式/XML/">
+                                <i class="fa fa-file"></i>
+                                XML
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/Data/文件格式/YAML/">
+                                <i class="fa fa-file"></i>
+                                YAML
+                            </a>
+                        </li>
+                    </ul>
+    
+                        </li>
+
+                    </ul>
+    
+                        </li>
+
+                    </ul>
+    
+                    <ul>
+                        <li class="directory">
+                            <a href="#" class="directory">
+                                <i class="fa fa-folder"></i>
+                                DatabaseSystem
+                            </a>
+                            
+                    <ul>
+                        <li class="directory">
+                            <a href="#" class="directory">
+                                <i class="fa fa-folder"></i>
+                                ElasticStack
+                            </a>
+                            
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/DatabaseSystem/ElasticStack/Elasticsearch/">
+                                <i class="fa fa-file"></i>
+                                Elasticsearch
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/DatabaseSystem/ElasticStack/KQL/">
+                                <i class="fa fa-file"></i>
+                                KQL
+                            </a>
+                        </li>
+                    </ul>
+    
+                        </li>
+
+                    </ul>
+    
+                    <ul>
+                        <li class="directory">
+                            <a href="#" class="directory">
+                                <i class="fa fa-folder"></i>
+                                MongoDB
+                            </a>
+                            
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/DatabaseSystem/MongoDB/命令/">
+                                <i class="fa fa-file"></i>
+                                命令
+                            </a>
+                        </li>
+                    </ul>
+    
+                        </li>
+
+                    </ul>
+    
+                    <ul>
+                        <li class="directory">
+                            <a href="#" class="directory">
+                                <i class="fa fa-folder"></i>
+                                MySQL
+                            </a>
+                            
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/DatabaseSystem/MySQL/1.简介/">
+                                <i class="fa fa-file"></i>
+                                1.简介
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/DatabaseSystem/MySQL/10.集群/">
+                                <i class="fa fa-file"></i>
+                                10.集群
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/DatabaseSystem/MySQL/11.调优/">
+                                <i class="fa fa-file"></i>
+                                11.调优
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/DatabaseSystem/MySQL/12.故障排除/">
+                                <i class="fa fa-file"></i>
+                                12.故障排除
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/DatabaseSystem/MySQL/13.分区/">
+                                <i class="fa fa-file"></i>
+                                13.分区
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/DatabaseSystem/MySQL/2.安装配置/">
+                                <i class="fa fa-file"></i>
+                                2.安装配置
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/DatabaseSystem/MySQL/3.数据类型/">
+                                <i class="fa fa-file"></i>
+                                3.数据类型
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/DatabaseSystem/MySQL/4.函数/">
+                                <i class="fa fa-file"></i>
+                                4.函数
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/DatabaseSystem/MySQL/4.注释/">
+                                <i class="fa fa-file"></i>
+                                4.注释
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/DatabaseSystem/MySQL/5.1SQL/">
+                                <i class="fa fa-file"></i>
+                                5.1SQL
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/DatabaseSystem/MySQL/5.数据库设计/">
+                                <i class="fa fa-file"></i>
+                                5.数据库设计
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/DatabaseSystem/MySQL/5.SQL/">
+                                <i class="fa fa-file"></i>
+                                5.SQL
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/DatabaseSystem/MySQL/6.1索引失效/">
+                                <i class="fa fa-file"></i>
+                                6.1索引失效
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/DatabaseSystem/MySQL/6.索引/">
+                                <i class="fa fa-file"></i>
+                                6.索引
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/DatabaseSystem/MySQL/7.数据库安全保护/">
+                                <i class="fa fa-file"></i>
+                                7.数据库安全保护
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/DatabaseSystem/MySQL/8.日志/">
+                                <i class="fa fa-file"></i>
+                                8.日志
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/DatabaseSystem/MySQL/9.命令/">
+                                <i class="fa fa-file"></i>
+                                9.命令
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/DatabaseSystem/MySQL/架构/">
+                                <i class="fa fa-file"></i>
+                                架构
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/DatabaseSystem/MySQL/数据库并发问题分析/">
+                                <i class="fa fa-file"></i>
+                                数据库并发问题分析
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/10/21/DatabaseSystem/MySQL/数据库存储引擎/">
+                                <i class="fa fa-file"></i>
+                                数据库存储引擎
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="directory">
+                            <a href="#" class="directory">
+                                <i class="fa fa-folder"></i>
+                                client
+                            </a>
+                            
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/05/27/DatabaseSystem/MySQL/client/Flask-SQLAlchemy/">
+                                <i class="fa fa-file"></i>
+                                Flask-SQLAlchemy
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/05/27/DatabaseSystem/MySQL/client/PyMySQL/">
+                                <i class="fa fa-file"></i>
+                                PyMySQL
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/05/26/DatabaseSystem/MySQL/client/SQLAlchemy/">
+                                <i class="fa fa-file"></i>
+                                SQLAlchemy
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/DatabaseSystem/MySQL/client/TortoiseORM/">
+                                <i class="fa fa-file"></i>
+                                TortoiseORM
+                            </a>
+                        </li>
+                    </ul>
+    
+                        </li>
+
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/DatabaseSystem/MySQL/DCL/">
+                                <i class="fa fa-file"></i>
+                                DCL
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/DatabaseSystem/MySQL/explain/">
+                                <i class="fa fa-file"></i>
+                                explain
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/DatabaseSystem/MySQL/InnoDB/">
+                                <i class="fa fa-file"></i>
+                                InnoDB
+                            </a>
+                        </li>
+                    </ul>
+    
+                        </li>
+
+                    </ul>
+    
+                    <ul>
+                        <li class="directory">
+                            <a href="#" class="directory">
+                                <i class="fa fa-folder"></i>
+                                RabbitMQ
+                            </a>
+                            
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/DatabaseSystem/RabbitMQ/0.Erlang、OTP/">
+                                <i class="fa fa-file"></i>
+                                0.Erlang、OTP
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/DatabaseSystem/RabbitMQ/1.基础/">
+                                <i class="fa fa-file"></i>
+                                1.基础
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/DatabaseSystem/RabbitMQ/10.Configuration/">
+                                <i class="fa fa-file"></i>
+                                10.Configuration
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/DatabaseSystem/RabbitMQ/11.部署指南/">
+                                <i class="fa fa-file"></i>
+                                11.部署指南
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/DatabaseSystem/RabbitMQ/12.集群/">
+                                <i class="fa fa-file"></i>
+                                12.集群
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/DatabaseSystem/RabbitMQ/13.Manage/">
+                                <i class="fa fa-file"></i>
+                                13.Manage
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/DatabaseSystem/RabbitMQ/14.客户端/">
+                                <i class="fa fa-file"></i>
+                                14.客户端
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/DatabaseSystem/RabbitMQ/15.Subject/">
+                                <i class="fa fa-file"></i>
+                                15.Subject
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/DatabaseSystem/RabbitMQ/16.TroubleShooting/">
+                                <i class="fa fa-file"></i>
+                                16.TroubleShooting
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/DatabaseSystem/RabbitMQ/17.Monitor/">
+                                <i class="fa fa-file"></i>
+                                17.Monitor
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/DatabaseSystem/RabbitMQ/18.Cluster/">
+                                <i class="fa fa-file"></i>
+                                18.Cluster
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/DatabaseSystem/RabbitMQ/19.应用场景/">
+                                <i class="fa fa-file"></i>
+                                19.应用场景
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/DatabaseSystem/RabbitMQ/2.VirtualHost/">
+                                <i class="fa fa-file"></i>
+                                2.VirtualHost
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/DatabaseSystem/RabbitMQ/20.插件/">
+                                <i class="fa fa-file"></i>
+                                20.插件
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/DatabaseSystem/RabbitMQ/21.TLS支持/">
+                                <i class="fa fa-file"></i>
+                                21.TLS支持
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/DatabaseSystem/RabbitMQ/22.性能测试/">
+                                <i class="fa fa-file"></i>
+                                22.性能测试
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/DatabaseSystem/RabbitMQ/23.RabbitMQ rabbitmq.conf配置文件详解/">
+                                <i class="fa fa-file"></i>
+                                23.RabbitMQ rabbitmq.conf配置文件详解
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/DatabaseSystem/RabbitMQ/3.User/">
+                                <i class="fa fa-file"></i>
+                                3.User
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/DatabaseSystem/RabbitMQ/4.Message/">
+                                <i class="fa fa-file"></i>
+                                4.Message
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/DatabaseSystem/RabbitMQ/5.Exchange/">
+                                <i class="fa fa-file"></i>
+                                5.Exchange
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/DatabaseSystem/RabbitMQ/6.1.Classic Queue/">
+                                <i class="fa fa-file"></i>
+                                6.1.Classic Queue
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/DatabaseSystem/RabbitMQ/6.2.Quorum Queue/">
+                                <i class="fa fa-file"></i>
+                                6.2.Quorum Queue
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/DatabaseSystem/RabbitMQ/6.3.Stream Queue/">
+                                <i class="fa fa-file"></i>
+                                6.3.Stream Queue
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/DatabaseSystem/RabbitMQ/6.Queue/">
+                                <i class="fa fa-file"></i>
+                                6.Queue
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/DatabaseSystem/RabbitMQ/7.1.Channel/">
+                                <i class="fa fa-file"></i>
+                                7.1.Channel
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/DatabaseSystem/RabbitMQ/7.Connection/">
+                                <i class="fa fa-file"></i>
+                                7.Connection
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/DatabaseSystem/RabbitMQ/8.Producer/">
+                                <i class="fa fa-file"></i>
+                                8.Producer
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/DatabaseSystem/RabbitMQ/9.Consumer/">
+                                <i class="fa fa-file"></i>
+                                9.Consumer
+                            </a>
+                        </li>
+                    </ul>
+    
+                        </li>
+
+                    </ul>
+    
+                    <ul>
+                        <li class="directory">
+                            <a href="#" class="directory">
+                                <i class="fa fa-folder"></i>
+                                Redis
+                            </a>
+                            
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/07/01/DatabaseSystem/Redis/1.简介/">
+                                <i class="fa fa-file"></i>
+                                1.简介
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/10/19/DatabaseSystem/Redis/10.最佳实践/">
+                                <i class="fa fa-file"></i>
+                                10.最佳实践
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="directory">
+                            <a href="#" class="directory">
+                                <i class="fa fa-folder"></i>
+                                11.client
+                            </a>
+                            
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/DatabaseSystem/Redis/11.client/Jedis/">
+                                <i class="fa fa-file"></i>
+                                Jedis
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/DatabaseSystem/Redis/11.client/Lettuce/">
+                                <i class="fa fa-file"></i>
+                                Lettuce
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/DatabaseSystem/Redis/11.client/python-redis-lock/">
+                                <i class="fa fa-file"></i>
+                                python-redis-lock
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/DatabaseSystem/Redis/11.client/redispy/">
+                                <i class="fa fa-file"></i>
+                                redispy
+                            </a>
+                        </li>
+                    </ul>
+    
+                        </li>
+
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/DatabaseSystem/Redis/11.Lua脚本/">
+                                <i class="fa fa-file"></i>
+                                11.Lua脚本
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="directory">
+                            <a href="#" class="directory">
+                                <i class="fa fa-folder"></i>
+                                12.业务实战
+                            </a>
+                            
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/11/29/DatabaseSystem/Redis/12.业务实战/1.OpenResty/">
+                                <i class="fa fa-file"></i>
+                                1.OpenResty
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/DatabaseSystem/Redis/12.业务实战/2.多级缓存方案/">
+                                <i class="fa fa-file"></i>
+                                2.多级缓存方案
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/DatabaseSystem/Redis/12.业务实战/3.其他/">
+                                <i class="fa fa-file"></i>
+                                3.其他
+                            </a>
+                        </li>
+                    </ul>
+    
+                        </li>
+
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/07/01/DatabaseSystem/Redis/2.安装配置/">
+                                <i class="fa fa-file"></i>
+                                2.安装配置
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/07/02/DatabaseSystem/Redis/3.数据类型/">
+                                <i class="fa fa-file"></i>
+                                3.数据类型
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/10/17/DatabaseSystem/Redis/4.底层数据结构/">
+                                <i class="fa fa-file"></i>
+                                4.底层数据结构
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/10/18/DatabaseSystem/Redis/5.命令/">
+                                <i class="fa fa-file"></i>
+                                5.命令
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/10/19/DatabaseSystem/Redis/6.内存管理/">
+                                <i class="fa fa-file"></i>
+                                6.内存管理
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/10/19/DatabaseSystem/Redis/7.集群/">
+                                <i class="fa fa-file"></i>
+                                7.集群
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/10/19/DatabaseSystem/Redis/8.部署/">
+                                <i class="fa fa-file"></i>
+                                8.部署
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/10/17/DatabaseSystem/Redis/8.网络模型/">
+                                <i class="fa fa-file"></i>
+                                8.网络模型
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/10/17/DatabaseSystem/Redis/9.通信协议/">
+                                <i class="fa fa-file"></i>
+                                9.通信协议
+                            </a>
+                        </li>
+                    </ul>
+    
+                        </li>
+
+                    </ul>
+    
+                    <ul>
+                        <li class="directory">
+                            <a href="#" class="directory">
+                                <i class="fa fa-folder"></i>
+                                Tool
+                            </a>
+                            
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/DatabaseSystem/Tool/DBeaver/">
+                                <i class="fa fa-file"></i>
+                                DBeaver
+                            </a>
+                        </li>
+                    </ul>
+    
+                        </li>
+
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/DatabaseSystem/Untitled/">
+                                <i class="fa fa-file"></i>
+                                Untitled
+                            </a>
+                        </li>
+                    </ul>
+    
+                        </li>
+
+                    </ul>
+    
+                    <ul>
+                        <li class="directory">
+                            <a href="#" class="directory">
+                                <i class="fa fa-folder"></i>
+                                Design
+                            </a>
+                            
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/Design/哈希一致解决方案/">
+                                <i class="fa fa-file"></i>
+                                哈希一致解决方案
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/Design/缓存综合解决方案/">
+                                <i class="fa fa-file"></i>
+                                缓存综合解决方案
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/Design/架构演变/">
+                                <i class="fa fa-file"></i>
+                                架构演变
+                            </a>
+                        </li>
+                    </ul>
+    
+                        </li>
+
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/httpshelp/">
+                                <i class="fa fa-file"></i>
+                                httpshelp
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="directory">
+                            <a href="#" class="directory">
+                                <i class="fa fa-folder"></i>
+                                Mantaince
+                            </a>
+                            
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/Mantaince/Untitled/">
+                                <i class="fa fa-file"></i>
+                                Untitled
+                            </a>
+                        </li>
+                    </ul>
+    
+                        </li>
+
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/05/27/README/">
+                                <i class="fa fa-file"></i>
+                                README
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="directory">
+                            <a href="#" class="directory">
+                                <i class="fa fa-folder"></i>
+                                SystemDesign
+                            </a>
+                            
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/SystemDesign/短链系统/">
+                                <i class="fa fa-file"></i>
+                                短链系统
+                            </a>
+                        </li>
+                    </ul>
+    
+                        </li>
+
+                    </ul>
+    
+                    <ul>
+                        <li class="directory">
+                            <a href="#" class="directory">
+                                <i class="fa fa-folder"></i>
+                                Test
+                            </a>
+                            
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/Test/概述/">
+                                <i class="fa fa-file"></i>
+                                概述
+                            </a>
+                        </li>
+                    </ul>
+    
+                        </li>
+
+                    </ul>
+    
+                    <ul>
+                        <li class="directory">
+                            <a href="#" class="directory">
+                                <i class="fa fa-folder"></i>
+                                Tool
+                            </a>
+                            
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/Tool/贝锐/">
+                                <i class="fa fa-file"></i>
+                                贝锐
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/Tool/测试工具/">
+                                <i class="fa fa-file"></i>
+                                测试工具
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/Tool/代码生成工具/">
+                                <i class="fa fa-file"></i>
+                                代码生成工具
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/Tool/开发专用缩略词/">
+                                <i class="fa fa-file"></i>
+                                开发专用缩略词
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/12/24/Tool/内网穿透/">
+                                <i class="fa fa-file"></i>
+                                内网穿透
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/Tool/视频播放器/">
+                                <i class="fa fa-file"></i>
+                                视频播放器
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/Tool/思维导图工具/">
+                                <i class="fa fa-file"></i>
+                                思维导图工具
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/Tool/语义化版本/">
+                                <i class="fa fa-file"></i>
+                                语义化版本
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/Tool/正则表达式/">
+                                <i class="fa fa-file"></i>
+                                正则表达式
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/Tool/Anki/">
+                                <i class="fa fa-file"></i>
+                                Anki
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/Tool/Clash/">
+                                <i class="fa fa-file"></i>
+                                Clash
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/06/29/Tool/cURL/">
+                                <i class="fa fa-file"></i>
+                                cURL
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/Tool/Electron/">
+                                <i class="fa fa-file"></i>
+                                Electron
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/06/26/Tool/Git/">
+                                <i class="fa fa-file"></i>
+                                Git
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/06/26/Tool/GoogleChrome/">
+                                <i class="fa fa-file"></i>
+                                GoogleChrome
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/Tool/Graphviz/">
+                                <i class="fa fa-file"></i>
+                                Graphviz
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/Tool/He3/">
+                                <i class="fa fa-file"></i>
+                                He3
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/05/26/Tool/Hexo/">
+                                <i class="fa fa-file"></i>
+                                Hexo
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/Tool/JetBrainTool/">
+                                <i class="fa fa-file"></i>
+                                JetBrainTool
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/Tool/labelImg/">
+                                <i class="fa fa-file"></i>
+                                labelImg
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/Tool/LaTex/">
+                                <i class="fa fa-file"></i>
+                                LaTex
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/Tool/License/">
+                                <i class="fa fa-file"></i>
+                                License
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/Tool/PDManer/">
+                                <i class="fa fa-file"></i>
+                                PDManer
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/Tool/Poedit/">
+                                <i class="fa fa-file"></i>
+                                Poedit
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/06/26/Tool/Postman/">
+                                <i class="fa fa-file"></i>
+                                Postman
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/12/24/Tool/Slidev/">
+                                <i class="fa fa-file"></i>
+                                Slidev
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/06/29/Tool/SSH/">
+                                <i class="fa fa-file"></i>
+                                SSH
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/Tool/StylePix/">
+                                <i class="fa fa-file"></i>
+                                StylePix
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/Tool/VisualStudioCode/">
+                                <i class="fa fa-file"></i>
+                                VisualStudioCode
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/11/30/Tool/VMware/">
+                                <i class="fa fa-file"></i>
+                                VMware
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/06/29/Tool/VSCode/">
+                                <i class="fa fa-file"></i>
+                                VSCode
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/Tool/Windows工具/">
+                                <i class="fa fa-file"></i>
+                                Windows工具
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/Tool/WinMerge/">
+                                <i class="fa fa-file"></i>
+                                WinMerge
+                            </a>
+                        </li>
+                    </ul>
+    
+                        </li>
+
+                    </ul>
+    
+                    <ul>
+                        <li class="directory">
+                            <a href="#" class="directory">
+                                <i class="fa fa-folder"></i>
+                                WebDevelopment
+                            </a>
+                            
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/06/10/WebDevelopment/分布式唯一ID/">
+                                <i class="fa fa-file"></i>
+                                分布式唯一ID
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/WebDevelopment/缓存方案/">
+                                <i class="fa fa-file"></i>
+                                缓存方案
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/05/30/WebDevelopment/接口设计/">
+                                <i class="fa fa-file"></i>
+                                接口设计
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/05/27/WebDevelopment/数据分页方式/">
+                                <i class="fa fa-file"></i>
+                                数据分页方式
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/WebDevelopment/微服务生态/">
+                                <i class="fa fa-file"></i>
+                                微服务生态
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/WebDevelopment/文件操作/">
+                                <i class="fa fa-file"></i>
+                                文件操作
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="directory">
+                            <a href="#" class="directory">
+                                <i class="fa fa-folder"></i>
+                                Container
+                            </a>
+                            
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/12/24/WebDevelopment/Container/Docker/">
+                                <i class="fa fa-file"></i>
+                                Docker
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/WebDevelopment/Container/VMware/">
+                                <i class="fa fa-file"></i>
+                                VMware
+                            </a>
+                        </li>
+                    </ul>
+    
+                        </li>
+
+                    </ul>
+    
+                    <ul>
+                        <li class="directory">
+                            <a href="#" class="directory">
+                                <i class="fa fa-folder"></i>
+                                Pandect
+                            </a>
+                            
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/22/WebDevelopment/Pandect/分布式事务/">
+                                <i class="fa fa-file"></i>
+                                分布式事务
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/WebDevelopment/Pandect/架构/">
+                                <i class="fa fa-file"></i>
+                                架构
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/WebDevelopment/Pandect/跨域/">
+                                <i class="fa fa-file"></i>
+                                跨域
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/WebDevelopment/Pandect/配置中心，服务自动更新配置/">
+                                <i class="fa fa-file"></i>
+                                配置中心，服务自动更新配置
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/WebDevelopment/Pandect/声明式事务还是编程式事务/">
+                                <i class="fa fa-file"></i>
+                                声明式事务还是编程式事务
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/WebDevelopment/Pandect/速记命名规范/">
+                                <i class="fa fa-file"></i>
+                                速记命名规范
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/WebDevelopment/Pandect/锁/">
+                                <i class="fa fa-file"></i>
+                                锁
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/WebDevelopment/Pandect/统一日志/">
+                                <i class="fa fa-file"></i>
+                                统一日志
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/WebDevelopment/Pandect/网站攻击/">
+                                <i class="fa fa-file"></i>
+                                网站攻击
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/06/29/WebDevelopment/Pandect/README/">
+                                <i class="fa fa-file"></i>
+                                README
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/WebDevelopment/Pandect/Ribbon负载均衡+OpenFeign远程HTTP调用/">
+                                <i class="fa fa-file"></i>
+                                Ribbon负载均衡+OpenFeign远程HTTP调用
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/WebDevelopment/Pandect/RPC/">
+                                <i class="fa fa-file"></i>
+                                RPC
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/WebDevelopment/Pandect/Web请求链路中的缓存/">
+                                <i class="fa fa-file"></i>
+                                Web请求链路中的缓存
+                            </a>
+                        </li>
+                    </ul>
+    
+                        </li>
+
+                    </ul>
+    
+                    <ul>
+                        <li class="directory">
+                            <a href="#" class="directory">
+                                <i class="fa fa-folder"></i>
+                                PythonWeb
+                            </a>
+                            
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/WebDevelopment/PythonWeb/Bottle/">
+                                <i class="fa fa-file"></i>
+                                Bottle
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/10/07/WebDevelopment/PythonWeb/Django/">
+                                <i class="fa fa-file"></i>
+                                Django
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/WebDevelopment/PythonWeb/FastAPI/">
+                                <i class="fa fa-file"></i>
+                                FastAPI
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2024/06/10/WebDevelopment/PythonWeb/Flask/">
+                                <i class="fa fa-file"></i>
+                                Flask
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/WebDevelopment/PythonWeb/README/">
+                                <i class="fa fa-file"></i>
+                                README
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/WebDevelopment/PythonWeb/Tornado/">
+                                <i class="fa fa-file"></i>
+                                Tornado
+                            </a>
+                        </li>
+                    </ul>
+    
+                        </li>
+
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/WebDevelopment/Web开发共识/">
+                                <i class="fa fa-file"></i>
+                                Web开发共识
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="directory">
+                            <a href="#" class="directory">
+                                <i class="fa fa-folder"></i>
+                                WebServer
+                            </a>
+                            
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/WebDevelopment/WebServer/CGI/">
+                                <i class="fa fa-file"></i>
+                                CGI
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/WebDevelopment/WebServer/gunicorn/">
+                                <i class="fa fa-file"></i>
+                                gunicorn
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/WebDevelopment/WebServer/LVS/">
+                                <i class="fa fa-file"></i>
+                                LVS
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/WebDevelopment/WebServer/uvicron/">
+                                <i class="fa fa-file"></i>
+                                uvicron
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <li class="file">
+                            <a href="/2025/02/21/WebDevelopment/WebServer/uWSGI/">
+                                <i class="fa fa-file"></i>
+                                uWSGI
+                            </a>
+                        </li>
+                    </ul>
+    
+                        </li>
+
+                    </ul>
+    
+                        </li>
+
+                    </ul>
+    
+</div>
+
+<!-- 文章大纲 -->
+<div id="toc"></div>
+        </aside>
+        <!-- 导航 -->
+        <nav>
+            <ul id="menu">
+    <!-- 内部链接本页面直接跳转 -->
+    
+    <li class="menu-item">
+        <a href="/" class="menu-item-link">主页</a>
+    </li>
+    
+    <li class="menu-item">
+        <a href="/about" class="menu-item-link">关于</a>
+    </li>
+    
+
+    <!-- 外部链接打开新的窗口跳转 -->
+    
+    <li class="menu-item">
+        <a href="https://me.yuzaoyah.site" class="menu-item-link" target="_blank">Site</a>
+    </li>
+    
+    <li class="menu-item">
+        <a href="https://github.com/yuzaoyah" class="menu-item-link" target="_blank">Github</a>
+    </li>
+    
+
+</ul>
+        </nav>
+        <!-- 正文 -->
+        <div id="content">
+      		<div>
+    <span id="post-author">作者: yuzaoyah</span>
+    <span id="post-date">2024-12-21 14:04:25</span>
+</div>
+
+<div id="article">
+    <p>0000</p>
+<p>User Level Thread，ULT，用户级线程：用户程序本身创建的线程</p>
+<p>Kernel Level Thread，KLT，内核级线程：内核程序本身创建的线程</p>
+<p>操作系统中线程是调度的基本单位，这里的线程指的是内核级线程。</p>
+<p>用户程序是由编程语言开发，使用该编程语言创建线程是调用的该语言相关库和函数，这时创建出的线程统一称为用户线程，即当用户基于该编程语言创建一个线程，例如<code>t = Thread(); t.run()</code>，此时这里的线程不过是一个简简单单的对象，操作系统真正调度的是内核级线程，所以该语言线程相关的库会调用操作系统内核程序暴露的创建线程的接口，从而创建内核级线程，这时用户级线程（一个普通的代表线程的对象）会与内核级别线程绑定，从而当操作系统调度该内核级别线程时就完成了需要执行的任务。</p>
+<p>内核级就是操作系统内核支持，用户级就是函数库实现（也就是说，不管你操作系统是不是支持线程的，我都可以在你上面用多线程编程）。</p>
+<p><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/35128513">https://www.zhihu.com/question/35128513</a></p>
+<p><strong>每个用户线程只能竞争该进程内部的资源</strong></p>
+<p><strong>内核级线程可以在全系统内进行资源的竞争</strong></p>
+<p>KLT对外暴露LWP的接口，Light Weight Process，轻量级进程，即线程</p>
+<p>P代表用户轻量级进程，即用户线程</p>
+<p>P会通过LWP与KLT进行映射</p>
+<p>KLT被操作系统调度</p>
+<img src="/2024/12/21/ComputerBasic/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E6%A8%A1%E5%9E%8B/8bd9fa55c00fdd97f605323a6949c2cc.png" class="" title="在这里插入图片描述">
+
+<p>P与KLT的映射关系有三种，一对一、多对一、多对多，即三种多线程模型。</p>
+<p>一对一模型</p>
+<p>一个用户线程对应一个内核线程</p>
+<img src="/2024/12/21/ComputerBasic/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E6%A8%A1%E5%9E%8B/image-20241221140735447.png" class="" title="image-20241221140735447">
+
+<p>优点：</p>
+<ul>
+<li>映射关系简单</li>
+<li>线程之前相对独立</li>
+<li>用户线程被调度的逻辑完全与操作系统一致</li>
+</ul>
+<p>缺点：</p>
+<ul>
+<li>一些操作系统限制了内核线程的数量，用户线程的数量也会受到限制</li>
+<li>用户线程上下文切换也意味着内核线程上下文切换</li>
+</ul>
+<img src="/2024/12/21/ComputerBasic/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E6%A8%A1%E5%9E%8B/09f1be9ec1a444ccb2eb2c1d1748cec0tplv-k3u1fbpfcp-zoom-in-crop-mark1512000.webp" class="" title="v2-6336254c8f8ca6dc790edfa27fa55e63_r.png">
+
+
+
+<p>多对一模型</p>
+<p>将多个用户线程映射到一个内核线程上，线程之间的切换由用户态的代码来实现，系统内核感受不到线程的实现方式。</p>
+<img src="/2024/12/21/ComputerBasic/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E6%A8%A1%E5%9E%8B/image-20241221141026384.png" class="" title="image-20241221141026384">
+
+<img src="/2024/12/21/ComputerBasic/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E6%A8%A1%E5%9E%8B/d675640a3c0f43598df05dd5a482e062tplv-k3u1fbpfcp-zoom-in-crop-mark1512000.webp" class="" title="v2-0e67e2e8e440049a544626a84caeb392_1440w.png">
+
+<p>优点：</p>
+<ul>
+<li>用户线程的建立、同步、销毁都在用户态中完成，用户线程的上下文切换不会导致内核线程上下文切换</li>
+<li>用户线程的数量不会受到内核线程数量的限制</li>
+</ul>
+<p>缺点：</p>
+<ul>
+<li>一个用户线程导致调用了内核级别的线程阻塞，则会导致所有用户线程阻塞</li>
+<li>无法充分利用多处理器优势，因为一个进程的所有用户线程都映射到一个内核线程了</li>
+</ul>
+<p>多对多模型</p>
+<ul>
+<li>将多个用户线程映射到多个内核线程上。</li>
+<li>由线程库负责在可用的可调度实体上调度用户线程，这使得线程的上下文切换非常快，因为避免了系统调用。</li>
+</ul>
+<img src="/2024/12/21/ComputerBasic/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E6%A8%A1%E5%9E%8B/image-20241221141927293.png" class="" title="image-20241221141927293">
+
+<img src="/2024/12/21/ComputerBasic/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E6%A8%A1%E5%9E%8B/03e8fbfc265646b1aed5e408e6e537c5tplv-k3u1fbpfcp-zoom-in-crop-mark1512000.webp" class="" title="v2-23915e002c37897826450b98e4b270ce_1440w.png">
+
+<p>优点：</p>
+<ul>
+<li>一个线程的阻塞不会导致所有的线程阻塞，因为此时还有别的内核线程调度来执行。</li>
+<li>多对多模型对用户线程的数量没有限制</li>
+<li>在多处理器的模型中，多对多模型的线程也能得到一定的性能提升，但提升的幅度不如一对一的大</li>
+</ul>
+<p>缺点：</p>
+<ul>
+<li>映射复杂</li>
+</ul>
+<p>多线程模型取决于具体平台和语言实现</p>
+<p>Windows</p>
+<p>Windows(从Win95开始)和Linux都实现了线程的一对一模型。</p>
+<p>Java</p>
+<p>Java线程在JDK1.2之前，是基于称为“绿色线程”（Green Threads）的用户线程实现的，而在JDK1.2中，线程模型替换为基于操作系统原生线程模型来实现。因此，在目前的JDK版本中，操作系统支持怎样的线程模型，在很大程度上决定了Java虚拟机的线程是怎样映射的，这点在不同的平台上没有办法达成一致，虚拟机规范中也并未限定Java线程需要使用哪种线程模型来实现。线程模型只对线程的并发规模和操作成本产生影响，对Java程序的编码和运行过程来说，这些差异都是透明的。</p>
+<p>在目前的JDK版本中，操作系统支持怎样的线程模型，在很大程度上决定了Java虚拟机的线程是怎样映射的，这点在不同的平台上没达成一致，Java虚拟机规范中也并未限定Java线程需要使用哪种线程模型来实现。对于Sun JDK来说，它的windows版与Linux版都是使用一对一的线程模型实现的，一条Java线程就映射到一条轻量级进程之中，因为Windows和Linux系统提供的线程模型就是一对一的。而在Solaris平台中，由于操作系统的线程特性可以同时支持一对一（通过Bound Threads或Alternate Libthread实现）及多对多（通过LWP&#x2F;Thread Based Synchronization实现）的线程模型，因此在Solaris版的JDK也对应提供了两个平台专有的虚拟机参数：-XX:+UseLWPSynchronization(默认值)和-XX:+UseBoundThreads来明确指定虚拟机使用哪种线程模型</p>
+<p>前文提到了用户级线程和内核级别线程的映射关系和映射模型，我们知道了：</p>
+<ul>
+<li>用户级线程和内核级线程是对应的，用户级线程不会自己凭空跑起来，最终都会落到一个内核线程当中去执行。</li>
+<li>用户线程的创建依赖于App开发者（Java中指JVM的开发者），而系统线程的创建依赖于内核，并且各自管理两种线程。</li>
+</ul>
+<p>既然用户线程需要用到内核线程，那么对应的平台（操作系统）就必须为我们提供相关的操作库或者接口等等，来实现用户线程管理方式的设计和编写。</p>
+<p>各自的平台都有各自的Api，比如Window下的Java，使用的线程库就是Win Api，Unix类的系统下，使用的就是PThread。</p>
+<p>在JDK1.2版本中，Java自行开发了一套用户线程管理工具，名叫：绿色线程，实现方法我们不去细究，我们需要知道，它是用来做用户线程管理的一套方案即可，它解决的是用户线程和内核线程的映射。</p>
+<blockquote>
+<p>绿色线程存在的问题，就是前面说到的，用户线程自行管理将无法被操作系统感知到，需要用户进行自行调度，无法更好地利用到当今CPU的多核心并行能力。</p>
+</blockquote>
+<p>在JDK1.2之后，Java选择了更加稳定、方便的操作系统原生的内核级线程，直接通过系统调用，将线程的调度交还给了操作系统的内核，而不再去自己管理用户线程。这就是我们常说的，<strong>Java线程会直接对应到系统线程之上</strong>。</p>
+<p>JVM自身会屏蔽掉操作系统带来的一些差异，为上层的字节码执行提供稳定的运行环境，但是操作系统本身的种种差异也会导致一些不同，JVM的线程映射到系统线程之后，具体的情况需要由操作系统的线程模型定义，一个Java线程被阻塞了，不一定内核线程就被阻塞了，因为很可能在一些其他的操作系统中，提供了1:1之外的内存映射关系，可能内核线程被内核调度走了去处理其他事情，所以，Java的内核状态并不一定能完全代表当前系统内核的状态。</p>
+<p>作者：开中断<br>链接：<a target="_blank" rel="noopener" href="https://juejin.cn/post/7085227749215830023">https://juejin.cn/post/7085227749215830023</a><br>来源：稀土掘金<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
+<p>在Java中，我们平时所说的并发编程、多线程、共享资源等概念都是与线程相关的，这里所说的线程实际上应该叫作“<strong>用户线程</strong>”，而对应到操作系统，还有另外一种线程叫作“<strong>内核线程</strong>”。</p>
+<p>用户线程位于内核之上，它的管理无需内核支持；而内核线程由操作系统来直接支持与管理。几乎所有的现代操作系统，包括 Windows、Linux、Mac OS X 和 Solaris，都支持内核线程。</p>
+<p>最终，用户线程和内核线程之间必然存在某种关系，本章我们一起来学习下建立这种关系常见的三种方法：多对一模型、一对一模型和多对多模型。</p>
+<p>（1）线程分为用户线程和内核线程；</p>
+<p>（2）线程模型有多对一模型、一对一模型、多对多模型；</p>
+<p>（3）操作系统一般只实现到一对一模型；</p>
+<p>（4）Java使用的是一对一线程模型，所以它的一个线程对应于一个内核线程，调度完全交给操作系统来处理；</p>
+<p>（5）Go语言使用的是多对多线程模型，这也是其高并发的原因，它的线程模型与Java中的ForkJoinPool非常类似；</p>
+<p>（6）python的gevent使用的是多对一线程模型；</p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/mccand1234/article/details/118465728">https://blog.csdn.net/mccand1234/article/details/118465728</a></p>
+<p><a target="_blank" rel="noopener" href="https://developer.volcengine.com/articles/7413184718121730102">https://developer.volcengine.com/articles/7413184718121730102</a></p>
+<p><a target="_blank" rel="noopener" href="https://blog.huohaodong.com/blog/project-loom-tasting">https://blog.huohaodong.com/blog/project-loom-tasting</a></p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qyb19970829/article/details/113621043">https://blog.csdn.net/qyb19970829/article/details/113621043</a></p>
+<p>总结一下，现在大部分都是一对一模型，不过天道好轮回，现在为了更进一步提高利用率，引入了协程。</p>
+<p>轻量级进程(LWP)是一种由内核支持的用户线程，如果用户线程完全由轻量级进程构成，可以说是轻量级进程就是线程</p>
+<p>Go</p>
+<h3 id="总结一下go协程的特点："><a href="#总结一下go协程的特点：" class="headerlink" title="总结一下go协程的特点："></a>总结一下go协程的特点：</h3><h6 id="协程间需要保证数据安全，比如通过channel或锁。"><a href="#协程间需要保证数据安全，比如通过channel或锁。" class="headerlink" title="协程间需要保证数据安全，比如通过channel或锁。"></a>协程间需要保证数据安全，比如通过channel或锁。</h6><h6 id="可以利用多核并行执行。"><a href="#可以利用多核并行执行。" class="headerlink" title="可以利用多核并行执行。"></a>可以利用多核并行执行。</h6><h6 id="协程间不完全同步，可以并行运行，具体要看channel的设计。"><a href="#协程间不完全同步，可以并行运行，具体要看channel的设计。" class="headerlink" title="协程间不完全同步，可以并行运行，具体要看channel的设计。"></a>协程间不完全同步，可以并行运行，具体要看channel的设计。</h6><h6 id="抢占式调度，可能无法实现公平。"><a href="#抢占式调度，可能无法实现公平。" class="headerlink" title="抢占式调度，可能无法实现公平。"></a>抢占式调度，可能无法实现公平。</h6><p>MPG</p>
+<p>并发编程模型</p>
+<p>CSP模型，通信顺序进程模型</p>
+<p>CSP模型的核心思想是“不要通过共享内存来通信，而要通过通信来共享内存”。</p>
+<pre><code>ch := make(chan int) // 创建一个整型channel
+go func() &#123;
+   
+    ch &lt;- 42 // 发送数据到channel
+&#125;()
+value := &lt;-ch // 从channel接收数据
+fmt.Println(value) // 输出：42
+</code></pre>
+<p><a target="_blank" rel="noopener" href="https://segmentfault.com/a/1190000039371156">https://segmentfault.com/a/1190000039371156</a></p>
+<p><a target="_blank" rel="noopener" href="https://segmentfault.com/a/1190000018150987">https://segmentfault.com/a/1190000018150987</a></p>
+
+</div>
+        </div>
+    </div>
+    <!-- 引入主 js 文件 -->
+	
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    
+<script src="/js/main.js"></script>
+
+	
+<script src="/js/aside.js"></script>
+
+</body>
+</html>
