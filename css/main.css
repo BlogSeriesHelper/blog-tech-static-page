@@ -13,6 +13,7 @@ body {
 body,
 body * {
     font-style: normal !important;
+    background: #f7f9f9;
 }
 
 aside {
@@ -32,7 +33,6 @@ nav {
     padding-left: 320px;
     background: #f7f9f9;
 }
-
 
 
 /* 自定义滚动条（可拖动） */
